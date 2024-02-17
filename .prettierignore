@@ -1,0 +1,8 @@
+*.yml
+/coverage
+/dist
+dist
+package-lock.json
+package.json
+src/assets/**
+yarn.lock

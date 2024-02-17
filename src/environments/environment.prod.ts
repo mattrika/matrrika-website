@@ -7,7 +7,7 @@
 import { AppEnvironment } from './app-environment.interface'
 
 export const environment: AppEnvironment = {
-    appName: 'ng-starter-no-semi-four-space',
+    appName: 'mattrika-website',
     production: true,
     apiUrl: '',
 }

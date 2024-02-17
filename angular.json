@@ -12,7 +12,7 @@
         "analytics": false
     },
     "projects": {
-        "ng-starter-no-semi-four-space": {
+        "mattrika-website": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:application": {
@@ -44,7 +44,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser-esbuild",
                     "options": {
-                        "outputPath": "dist/ng-starter-no-semi-four-space",
+                        "outputPath": "dist/mattrika-website",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -91,10 +91,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                          "buildTarget": "ng-starter-no-semi-four-space:build:production"
+                          "buildTarget": "mattrika-website:build:production"
                         },
                         "development": {
-                          "buildTarget": "ng-starter-no-semi-four-space:build:development"
+                          "buildTarget": "mattrika-website:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -102,7 +102,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                      "buildTarget": "ng-starter-no-semi-four-space:build"
+                      "buildTarget": "mattrika-website:build"
                     }
                 },
                 "test": {

@@ -1,0 +1,86 @@
+<div class="py-8 px-8 max-w-4xl mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+  <div>
+    <div class="step">
+          <i class="step-icon fas fa-comment-dots"></i>
+          <div class="step-content">
+            <h1>Let's Start</h1>
+            <h3>1 Share your requirements</h3>
+            <h3>2 Discuss them with our experts</h3>
+            <h3>3 Get a free quote</h3>
+            <h3>4 Start the project</h3>
+          </div>
+        </div>
+  </div>
+  <div class="text-center space-y-2 sm:text-left">
+    <div class="space-y-0.5">
+      <div
+    class="h-full bg-gradient-to-br from-primary to-secondary flex justify-center items-center w-full"
+>
+    <div class="rounded-xl bg-base-100 p-2 max-w-2xl w-full mx-auto flex flex-col justify-center">
+
+        <div class="flex items-center justify-center mt-2">
+            <form>
+                <div class="w-full max-w-lg flex flex-col mt-2">
+                    <input
+                        type="text"
+                        placeholder="your name"
+                        class="input input-bordered w-full"
+                        formControlName="firstName"
+                    />
+                </div>
+
+                <div class="w-full max-w-lg flex flex-col mt-2">
+                    <input
+                        type="email"
+                        placeholder="your email"
+                        class="input input-bordered w-full"
+                        formControlName="email"
+                    />
+                </div>
+
+                <div class="w-full max-w-lg flex flex-col mt-2">
+                    <input
+                        type="text"
+                        placeholder="describe your idea"
+                        class="input input-bordered w-full"
+                        formControlName="idea"
+                    />
+                </div>
+
+                <div class="flex items-center mt-4">
+                    <input type="checkbox" formControlName="acceptTerms" />
+                    <label class="ml-2">
+                        I accept the
+                        <a class="daisyUI link text-blue-500" (click)="openTermsModal()">
+                            Terms & Conditions
+                        </a>
+                        and
+                        <a class="daisyUI link text-blue-500" (click)="openPrivacyModal()">
+                            Privacy Policy
+                        </a>
+                    </label>
+                </div>
+                <div class="flex items-center mt-4">
+                    <input
+                        type="checkbox"
+                        id="newsletterCheckbox"
+                        formControlName="receiveNewsletter"
+                    />
+                    <label for="newsletterCheckbox" class="ml-2">
+                        I would like to receive a Newsletter, promotions, tips, and tricks
+                        (optional)
+                    </label>
+                </div>
+                <div class="w-full max-w-lg flex flex-row mt-4">
+                    <button appearance="ghost">
+                        <i class="bx bx-file mr-2"></i>
+                        Attach file
+                    </button>
+                    <button class="ml-4 px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+  </div>
+</div>

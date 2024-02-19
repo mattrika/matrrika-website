@@ -4,11 +4,15 @@ import { BannerComponent } from '@main/banner/components/banner/banner.component
 import { NavbarComponent } from '@main/navbar/components/navbar/navbar.component'
 import { RegistrationComponent } from '@main/registration/components/registration/registration.component'
 import { StatisticsComponent } from '@main/statistics/components/statistics/statistics.component'
+import { TechnicalBenefitsComponent } from '@main/technical benefits/components/technical-benefits/technical-benefits.component'
 import { DUIButton } from 'david-ui-angular'
+import { ReviewListComponent } from "../../main/review/components/review-list/review-list.component";
 
 @Component({
     selector: 'app-home',
     standalone: true,
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
     imports: [
         CommonModule,
         DUIButton,
@@ -16,8 +20,8 @@ import { DUIButton } from 'david-ui-angular'
         BannerComponent,
         RegistrationComponent,
         StatisticsComponent,
+        ReviewListComponent,
+        TechnicalBenefitsComponent
     ],
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss'],
 })
 export default class HomeComponent {}

@@ -1,14 +1,30 @@
-<div class="bg-white text-gray-500 col-span-12 py-4 px-4">
-    <div class="flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Mattrika</h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#" class="hover:text-gray-700">service</a></li>
-          <li><a href="#" class="hover:text-gray-700">portfolio</a></li>
-          <li><a href="#" class="hover:text-gray-700">about us</a></li>
-          <li><a href="#" class="hover:text-gray-700">blogs</a></li>
-          <li><a href="#" class="hover:text-gray-900 hover:box-border hover:p-1 hover:bg-green-400">contact us</a></li>
-        </ul>
-      </nav>
-    </div>
+<div class="bg-white text-gray-500 col-span-6 py-4 px-4">
+  <div class="flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Mattrika</h1>
+    <nav class="flex space-x-4">
+      <a class="hover:text-gray-700">Service</a>
+      <mat-menu #serviceMenu="matMenu" class="text-white text-xl">
+        <button mat-menu-item>Service 1</button>
+        <button mat-menu-item>Service 2</button>
+      </mat-menu>
+      <button mat-icon-button [matMenuTriggerFor]="serviceMenu" class="gap-0">
+        <mat-icon>arrow_drop_down</mat-icon>
+      </button>
+
+      <a href="#" class="hover:text-gray-700">Portfolio</a>
+
+      <a class="hover:text-gray-700">About us</a>
+      <mat-menu #aboutMenu="matMenu" class="text-white text-xl">
+        <button mat-menu-item>Team</button>
+        <button mat-menu-item>Our History</button>
+      </mat-menu>
+      <button mat-icon-button [matMenuTriggerFor]="aboutMenu">
+        <mat-icon>arrow_drop_down</mat-icon>
+      </button>
+
+      <a href="#" class="hover:text-gray-700">Blogs</a>
+
+      <a [routerLink]="homeRoutes.contractUs.path" class="hover:text-gray-900 hover:box-border hover:p-1 hover:bg-green-400">contact us</a>
+    </nav>
+  </div>
 </div>

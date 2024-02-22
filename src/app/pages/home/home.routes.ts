@@ -22,7 +22,7 @@ export function getHomeRoutes(): HomeRoutes {
             pathMatch: 'full',
         },
         contractUs: {
-            path: 'home/contractUs',
+            path: 'contractUs',
             title: 'ContractUs',
             resolve: { layout: setLayout(PageLayout.Sidebar) },
             loadComponent: () =>

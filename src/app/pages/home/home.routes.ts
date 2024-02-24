@@ -6,6 +6,7 @@ export type HomeRoutes = {
     index: Route
     redirect: Route
     contractUs: Route
+    team: Route
 }
 
 export function getHomeRoutes(): HomeRoutes {
@@ -28,6 +29,15 @@ export function getHomeRoutes(): HomeRoutes {
             loadComponent: () =>
                 import('@main/registration/components/registration/registration.component').then(
                     (m) => m.RegistrationComponent,
+                ),
+        },
+        team: {
+            path: 'team',
+            title: 'team:',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import('@main/about us/components/about-us/about-us.component').then(
+                    (m) => m.AboutUsComponent,
                 ),
         },
     }

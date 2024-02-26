@@ -11,6 +11,7 @@ export type HomeRoutes = {
     softwareTesting: Route
     uiDesign: Route
     customSoftwareDevelopment: Route
+    faq: Route
 }
 
 export function getHomeRoutes(): HomeRoutes {
@@ -43,6 +44,13 @@ export function getHomeRoutes(): HomeRoutes {
                 import('@main/about us/components/about-us/about-us.component').then(
                     (m) => m.AboutUsComponent,
                 ),
+        },
+        faq: {
+            path: 'faq',
+            title: 'faq',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import('@main/faq/components/faq/faq.component').then((m) => m.FaqComponent),
         },
         softwareDevelopment: {
             path: 'software-development',

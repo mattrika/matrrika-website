@@ -12,6 +12,7 @@ export type HomeRoutes = {
     uiDesign: Route
     customSoftwareDevelopment: Route
     faq: Route
+    portfolio: Route
 }
 
 export function getHomeRoutes(): HomeRoutes {
@@ -51,6 +52,15 @@ export function getHomeRoutes(): HomeRoutes {
             resolve: { layout: setLayout(PageLayout.Sidebar) },
             loadComponent: () =>
                 import('@main/faq/components/faq/faq.component').then((m) => m.FaqComponent),
+        },
+        portfolio: {
+            path: 'portfolio',
+            title: 'portfolio',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import('@main/protfolio/components/portfolio/portfolio.component').then(
+                    (m) => m.PortfolioComponent,
+                ),
         },
         softwareDevelopment: {
             path: 'software-development',

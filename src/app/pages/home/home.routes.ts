@@ -14,6 +14,7 @@ export type HomeRoutes = {
     faq: Route
     portfolio: Route
     technicalBenefits: Route
+    allReviews: Route
 }
 
 export function getHomeRoutes(): HomeRoutes {
@@ -61,6 +62,15 @@ export function getHomeRoutes(): HomeRoutes {
             loadComponent: () =>
                 import('@main/protfolio/components/portfolio/portfolio.component').then(
                     (m) => m.PortfolioComponent,
+                ),
+        },
+        allReviews: {
+            path: 'all-reviews',
+            title: 'all reviews',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import('@main/review/components/all-reviews/all-reviews.component').then(
+                    (m) => m.AllReviewsComponent,
                 ),
         },
         technicalBenefits: {

@@ -13,6 +13,7 @@ export type HomeRoutes = {
     customSoftwareDevelopment: Route
     faq: Route
     portfolio: Route
+    technicalBenefits: Route
 }
 
 export function getHomeRoutes(): HomeRoutes {
@@ -61,6 +62,15 @@ export function getHomeRoutes(): HomeRoutes {
                 import('@main/protfolio/components/portfolio/portfolio.component').then(
                     (m) => m.PortfolioComponent,
                 ),
+        },
+        technicalBenefits: {
+            path: 'technical-benefits',
+            title: 'technical benefits',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import(
+                    '@main/technical benefits/components/technical-benefits/technical-benefits.component'
+                ).then((m) => m.TechnicalBenefitsComponent),
         },
         softwareDevelopment: {
             path: 'software-development',

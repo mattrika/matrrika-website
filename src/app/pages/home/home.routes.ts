@@ -14,6 +14,12 @@ export type HomeRoutes = {
     faq: Route
     portfolio: Route
     technicalBenefits: Route
+    relevantSkill: Route
+    improvementCertification: Route
+    allDetails: Route
+    experienceDesigner: Route
+    qualityGuaranteed: Route
+    mordenTechnologies: Route
     allReviews: Route
 }
 
@@ -81,6 +87,60 @@ export function getHomeRoutes(): HomeRoutes {
                 import(
                     '@main/technical benefits/components/technical-benefits/technical-benefits.component'
                 ).then((m) => m.TechnicalBenefitsComponent),
+        },
+        relevantSkill: {
+            path: 'technical-benefits/relevant-skill',
+            title: 'relevant skill',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import(
+                    '@main/technical benefits/components/relevant-skill/relevant-skill.component'
+                ).then((m) => m.RelevantSkillComponent),
+        },
+        improvementCertification: {
+            path: 'technical-benefits/improvement-certification',
+            title: 'improvement certification',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import(
+                    '@main/technical benefits/components/improvement-certification/improvement-certification.component'
+                ).then((m) => m.ImprovementCertificationComponent),
+        },
+        allDetails: {
+            path: 'technical-benefits/all-details',
+            title: 'all details',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import(
+                    '@main/technical benefits/components/all-details/all-details.component'
+                ).then((m) => m.AllDetailsComponent),
+        },
+        experienceDesigner: {
+            path: 'technical-benefits/experience-designer',
+            title: 'experience designer',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import(
+                    '@main/technical benefits/components/experience-designer/experience-designer.component'
+                ).then((m) => m.ExperienceDesignerComponent),
+        },
+        qualityGuaranteed: {
+            path: 'technical-benefits/quality-guaranteed',
+            title: 'quality guaranteed',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import(
+                    '@main/technical benefits/components/quality-guaranteed/quality-guaranteed.component'
+                ).then((m) => m.QualityGuaranteedComponent),
+        },
+        mordenTechnologies: {
+            path: 'technical-benefits/morden-technologies',
+            title: 'morden technologies',
+            resolve: { layout: setLayout(PageLayout.Sidebar) },
+            loadComponent: () =>
+                import(
+                    '@main/technical benefits/components/morden-technologies/morden-technologies.component'
+                ).then((m) => m.MordenTechnologiesComponent),
         },
         softwareDevelopment: {
             path: 'software-development',

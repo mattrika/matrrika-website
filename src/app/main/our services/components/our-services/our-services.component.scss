@@ -1,18 +1,17 @@
 :host {
-  display: block;
+    display: block;
 }
 
 @keyframes moveLeftToRight {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 .animate-arrow {
-  display: inline-block;
-  animation: moveLeftToRight 2s infinite linear;
+    display: inline-block;
+    animation: moveLeftToRight 2s infinite linear;
 }
-

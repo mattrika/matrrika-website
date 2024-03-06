@@ -16,7 +16,7 @@
             "quickfix.biome": "explicit",
             "source.organizeImports.biome": "explicit"
         },
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
     },
     "[typescript]": {
         "editor.defaultFormatter": "biomejs.biome",
@@ -24,7 +24,7 @@
             "quickfix.biome": "always",
             "source.organizeImports.biome": "always"
         },
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features",

@@ -6,7 +6,8 @@
         "angular.ng-template",
         "editorconfig.editorconfig",
         "biomejs.biome",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "cyrilletuzi.angular-schematics"
     ],
     // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
     "unwantedRecommendations": []

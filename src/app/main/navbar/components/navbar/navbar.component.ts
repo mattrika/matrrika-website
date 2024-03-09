@@ -32,4 +32,3 @@ export class NavbarComponent implements OnInit {
         this.sidenavToggle.next()
     }
 }
-

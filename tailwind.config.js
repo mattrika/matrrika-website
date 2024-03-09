@@ -6,56 +6,53 @@ module.exports = {
     darkMode: 'media', // or 'class'
     theme: {
         extend: {
-
             keyframes: {
+                typing: {
+                    '0%': {
+                        width: '0%',
+                        visibility: 'hidden',
+                    },
+                    '100%': {
+                        width: '100%',
+                    },
+                },
+                blink: {
+                    '50%': {
+                        borderColor: 'transparent',
+                    },
+                    '100%': {
+                        borderColor: 'white',
+                    },
+                },
 
-                 typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden"
-          },
-          "100%": {
-            width: "100%"
-          }
-        },
-        blink: {
-          "50%": {
-            borderColor: "transparent"
-          },
-          "100%": {
-            borderColor: "white"
-          }
-        },
-
-
-         typewriter: {
-          to: {
-            left: '100%',
-          },
-        },
-        blink: {
-          '0%': {
-            opacity: '0',
-          },
-          '0.1%': {
-            opacity: '1',
-          },
-          '50%': {
-            opacity: '1',
-          },
-          '50.1%': {
-            opacity: '0',
-          },
-          '100%': {
-            opacity: '0',
-          },
-        },
-      },
-      animation: {
-        typewriter: 'typewriter 2s steps(11) forwards',
-        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
-      },
+                typewriter: {
+                    to: {
+                        left: '100%',
+                    },
+                },
+                blink: {
+                    '0%': {
+                        opacity: '0',
+                    },
+                    '0.1%': {
+                        opacity: '1',
+                    },
+                    '50%': {
+                        opacity: '1',
+                    },
+                    '50.1%': {
+                        opacity: '0',
+                    },
+                    '100%': {
+                        opacity: '0',
+                    },
+                },
+            },
+            animation: {
+                typewriter: 'typewriter 2s steps(11) forwards',
+                caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+                typing: 'typing 2s steps(20) infinite alternate, blink .7s infinite',
+            },
 
             colors: {
                 base: 'var(--base)',
@@ -81,7 +78,5 @@ module.exports = {
         require('@tailwindcss/typography'),
         require('tailwindcss-elevation'),
         require('tailwind-scrollbar'),
-        // TODO: fix build issue when this plugin is enabled
-        // require('prettier-plugin-tailwindcss'),
     ],
 }

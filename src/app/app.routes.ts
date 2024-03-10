@@ -1,26 +1,19 @@
 import { Route } from '@angular/router'
-import { AuthRoutes, getAuthRoutes } from '@pages/auth/auth.routes'
 import { HomeRoutes, getHomeRoutes } from '@pages/home/home.routes'
 import { NotFoundPageRoutes, getNotFoundPageRoutes } from '@pages/not-found/not-found.routes'
-import { ProfileRoutes, getProfileRoutes } from '@pages/profile/profile.routes'
 
 type GroupedRoutes = [
     HomeRoutes,
-    AuthRoutes,
-    ProfileRoutes,
     // catch-all route must be last
     NotFoundPageRoutes,
 ]
 
-const groupedRoutes: GroupedRoutes = [
-    getHomeRoutes(),
-    getAuthRoutes(),
-    getProfileRoutes(),
-    getNotFoundPageRoutes(),
-]
+const groupedRoutes: GroupedRoutes = [getHomeRoutes(), getNotFoundPageRoutes()]
 
 const flattenedRoutes: Route[] = []
+// biome-ignore lint/complexity/noForEach: <explanation>
 groupedRoutes.forEach((routeGroup) => {
+    // biome-ignore lint/complexity/noForEach: <explanation>
     Object.values(routeGroup).forEach((route) => flattenedRoutes.push(route))
 })
 

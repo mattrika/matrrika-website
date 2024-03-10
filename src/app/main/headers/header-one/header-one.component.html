@@ -1,41 +1,25 @@
-<!--
-
-
-
-<div class="col-span-6 bg-white px-4 py-4 text-gray-500">
-  <div class="flex items-center justify-between">
-    <h1 class="text-2xl font-bold"><a [routerLink]="homeRoutes.redirect.path">Mattrika</a></h1>
-    <nav class="flex space-x-4">
-        <a [routerLink]="homeRoutes.redirect.path" class="hover:text-gray-700">Home</a>
-        <div class="group relative inline-block">
-  <button class="hover:text-gray-700">
-    Service
-  </button>
-  <div class="absolute mt-2 hidden rounded-lg bg-white text-black shadow-md group-hover:block">
-    <a [routerLink]="homeRoutes.softwareDevelopment.path" class="block p-2" style="white-space: nowrap;">software development</a>
-    <a [routerLink]="homeRoutes.softwareTesting.path" class="block p-2" style="white-space: nowrap;">software testing</a>
-    <a [routerLink]="homeRoutes.uiDesign.path" class="block p-2" style="white-space: nowrap;">UI/UX design</a>
-    <a [routerLink]="homeRoutes.customSoftwareDevelopment.path" class="block p-2" style="white-space: nowrap;">custom software development</a>
-  </div>
-</div>
-
-      <a [routerLink]="homeRoutes.portfolio.path" class="hover:text-gray-700">Portfolio</a>
-
-      <div class="group relative inline-block">
-  <button class="hover:text-gray-700">
-    About Us
-  </button>
-  <div class="absolute mt-2 hidden rounded-md bg-white text-black shadow-md group-hover:block">
-    <a [routerLink]="homeRoutes.team.path" class="block p-2" style="white-space: nowrap;">team</a>
-    <a [routerLink]="homeRoutes.technicalBenefits.path" class="block p-2" style="white-space: nowrap;">technical benefits</a>
-    <a [routerLink]="homeRoutes.team.path" class="block p-2" style="white-space: nowrap;">all reviews</a>
-  </div>
-</div>
-
-      <a [routerLink]="homeRoutes.faq.path" class="hover:text-gray-700">FAQ</a>
-
-<a [routerLink]="homeRoutes.contractUs.path" class="box-border rounded-md bg-teal-500 p-1 text-white hover:bg-teal-600">Contact Us</a>
-    </nav>
-  </div>
-</div> -->
--->
+<header class="body-font border-b border-solid border-gray-200 bg-white text-gray-600">
+    <div class="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
+        <a
+            [routerLink]="[]"
+            [fragment]="'home'"
+            class="title-font mb-4 flex items-center font-medium text-gray-900 md:mb-0"
+        >
+            <img src="./../../../../assets/Mattrika_transparent.png" alt="logo" class="h-12 w-auto" />
+            <!-- <span class="ml-3 text-xl">Tailblocks</span> -->
+        </a>
+        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
+            <a [routerLink]="[]" [fragment]="'services'" class="mr-5 hover:text-gray-900">Services</a>
+            <a [routerLink]="[]" [fragment]="'about-us'" class="mr-5 hover:text-gray-900">About Us</a>
+            <a [routerLink]="[]" [fragment]="'team'" class="mr-5 hover:text-gray-900">Team</a>
+            <a [routerLink]="[]" [fragment]="'portfolio'" class="mr-5 hover:text-gray-900">Portfolio</a>
+        </nav>
+        <button
+            [routerLink]="[]"
+            [fragment]="'contact'"
+            class="mt-4 inline-flex items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none md:mt-0"
+        >
+            Contact Us
+        </button>
+    </div>
+</header>

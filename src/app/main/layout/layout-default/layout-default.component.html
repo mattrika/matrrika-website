@@ -1,4 +1,6 @@
-<app-navbar [sidenavToggleVisible]="false" class="sticky top-0 z-50"></app-navbar>
-<main class="block pb-24">
+<app-header-one [sidenavToggleVisible]="false" class="sticky top-0 z-50"></app-header-one>
+<main class="block min-h-[calc(100vh-64px)]">
     <ng-content></ng-content>
 </main>
+
+<app-footer-two></app-footer-two>

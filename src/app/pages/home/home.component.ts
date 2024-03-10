@@ -1,17 +1,15 @@
 import { CommonModule } from '@angular/common'
-import { Component } from '@angular/core'
-import { AboutUsComponent } from '@main/about us/components/about-us/about-us.component'
-import { BannerComponent } from '@main/banner/components/banner/banner.component'
-import { FeaturesComponent } from '@main/features/components/features/features.component'
-import { InfoComponent } from '@main/info/components/info/info.component'
-import { LogoSliderComponent } from '@main/logo slider/components/logo-slider/logo-slider.component'
-import { NavbarComponent } from '@main/navbar/components/navbar/navbar.component'
-import { OurServicesComponent } from '@main/our services/components/our-services/our-services.component'
-import { RegistrationComponent } from '@main/registration/components/registration/registration.component'
-import { StatisticsComponent } from '@main/statistics/components/statistics/statistics.component'
-import { TechnicalBenefitsComponent } from '@main/technical benefits/components/technical-benefits/technical-benefits.component'
-import { DUIButton } from 'david-ui-angular'
-import { ReviewListComponent } from "../../main/review/components/review-list/review-list.component";
+import { Component, OnInit } from '@angular/core'
+import { ActivatedRoute } from '@angular/router'
+import { BannerTwoComponent } from '@main/banner/components/banner-two/banner-two.component'
+import { HeaderOneComponent } from '@main/headers/header-one/header-one.component'
+import { MapComponent } from '@main/maps/components/map/map.component'
+import { OurServicesOneComponent } from '@main/our-services/components/our-services-one/our-services-one.component'
+import { PortfolioComponent } from '@main/protfolio/components/portfolio/portfolio.component'
+import { QualityOneComponent } from '@main/qualities/components/quality-one/quality-one.component'
+import { StatisticsTwoComponent } from '@main/statistics/components/statistics-two/statistics-two.component'
+import { OurTeamOneComponent } from '@main/team/components/our-team-one/our-team-one.component'
+import { TestimonialOneComponent } from '@main/testimonials/components/testimonial-one/testimonial-one.component'
 
 @Component({
     selector: 'app-home',
@@ -20,18 +18,26 @@ import { ReviewListComponent } from "../../main/review/components/review-list/re
     styleUrls: ['./home.component.scss'],
     imports: [
         CommonModule,
-        DUIButton,
-        NavbarComponent,
-        BannerComponent,
-        RegistrationComponent,
-        StatisticsComponent,
-        ReviewListComponent,
-        TechnicalBenefitsComponent,
-        FeaturesComponent,
-        LogoSliderComponent,
-        InfoComponent,
-        OurServicesComponent,
-        AboutUsComponent,
+        HeaderOneComponent,
+        BannerTwoComponent,
+        StatisticsTwoComponent,
+        MapComponent,
+        OurServicesOneComponent,
+        QualityOneComponent,
+        OurTeamOneComponent,
+        TestimonialOneComponent,
+        PortfolioComponent,
     ],
 })
-export default class HomeComponent {}
+export default class HomeComponent implements OnInit {
+    constructor(private route: ActivatedRoute) {}
+
+    ngOnInit(): void {
+        this.route.fragment.subscribe((fragment) => {
+            if (fragment) {
+                const element = document.querySelector(`#${fragment}`)
+                if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+        })
+    }
+}

@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router'
 import { AppStateService } from '@core/states/app-state.service'
 import { MaterialModules } from '@core/ui/material'
 import { isSmallScreen } from '@core/utils/screen.util'
-import { AuthStateService } from '@main/auth/services/auth.service'
 import { HeaderOneComponent } from '@main/headers/header-one/header-one.component'
 
 @Component({
@@ -26,10 +25,7 @@ export class LayoutSidebarComponent {
     appName = this.appState.appName
     isSmallScreen = false
 
-    constructor(
-        public auth: AuthStateService,
-        private appState: AppStateService,
-    ) {
+    constructor(private appState: AppStateService) {
         this.isSmallScreen = isSmallScreen()
         if (this.isSmallScreen) {
             this.opened = false

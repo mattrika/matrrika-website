@@ -1,13 +1,11 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'
+import { Component } from '@angular/core'
 
 @Component({
     selector: 'app-map',
     standalone: true,
-    imports: [
-        CommonModule,
-    ],
+    imports: [CommonModule],
     templateUrl: './map.component.html',
     styleUrl: './map.component.scss',
 })
-export class MapComponent { }
+export class MapComponent {}

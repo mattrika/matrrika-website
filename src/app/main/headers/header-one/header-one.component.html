@@ -1,18 +1,23 @@
-<header class="border-gray-200 bg-white border-b border-solid text-gray-600 body-font">
-    <div class="flex md:flex-row flex-col flex-wrap items-center mx-auto p-5 container">
-        <a [routerLink]="[]" [fragment]="'home'" class="flex items-center mb-4 md:mb-0 font-medium text-gray-900 title-font">
-            <img src="./../../../../assets/Mattrika_transparent.png" alt="logo" class="w-auto h-12">
+<header class="body-font border-b border-solid border-gray-200 bg-white text-gray-600">
+    <div class="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
+        <a
+            [routerLink]="[]"
+            [fragment]="'home'"
+            class="title-font mb-4 flex items-center font-medium text-gray-900 md:mb-0"
+        >
+            <img src="./../../../../assets/Mattrika_transparent.png" alt="logo" class="h-12 w-auto" />
             <!-- <span class="ml-3 text-xl">Tailblocks</span> -->
         </a>
-        <nav class="flex flex-wrap justify-center items-center md:ml-auto text-base">
+        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
             <a [routerLink]="[]" [fragment]="'services'" class="mr-5 hover:text-gray-900">Services</a>
             <a [routerLink]="[]" [fragment]="'about-us'" class="mr-5 hover:text-gray-900">About Us</a>
             <a [routerLink]="[]" [fragment]="'team'" class="mr-5 hover:text-gray-900">Team</a>
             <a [routerLink]="[]" [fragment]="'portfolio'" class="mr-5 hover:text-gray-900">Portfolio</a>
         </nav>
         <button
-        [routerLink]="[]" [fragment]="'contact'"
-            class="inline-flex items-center border-0 bg-teal-500 hover:bg-teal-600 mt-4 md:mt-0 px-3 py-1 rounded text-white focus:outline-none"
+            [routerLink]="[]"
+            [fragment]="'contact'"
+            class="mt-4 inline-flex items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none md:mt-0"
         >
             Contact Us
         </button>

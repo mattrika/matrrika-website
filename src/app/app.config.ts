@@ -25,7 +25,6 @@ export const appConfig: ApplicationConfig = {
     providers: [
         { provide: APP_ENVIRONMENT, useValue: environment },
         { provide: DATE_PIPE_DEFAULT_OPTIONS, useValue: { dateFormat: 'shortDate' } },
-        { provide: TitleStrategy, useClass: CustomTitleStrategy },
         provideHttpClient(withXsrfConfiguration({}), withJsonpSupport(), withInterceptors([])),
         provideRouter(
             AppRoutes,

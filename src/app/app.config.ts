@@ -9,14 +9,11 @@ import { ApplicationConfig, importProvidersFrom } from '@angular/core'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {
     PreloadAllModules,
-    TitleStrategy,
     provideRouter,
     withComponentInputBinding,
     withInMemoryScrolling,
     withPreloading,
-    withRouterConfig,
 } from '@angular/router'
-import { CustomTitleStrategy } from '@core/services/custom-title.service'
 import { APP_ENVIRONMENT } from '@environment/app-environment.injector'
 import { environment } from '@environment/environment'
 import { AppRoutes } from './app.routes'
@@ -28,8 +25,10 @@ export const appConfig: ApplicationConfig = {
         provideHttpClient(withXsrfConfiguration({}), withJsonpSupport(), withInterceptors([])),
         provideRouter(
             AppRoutes,
-            withInMemoryScrolling({ scrollPositionRestoration: 'enabled' }),
-            withRouterConfig({ onSameUrlNavigation: 'reload' }),
+            withInMemoryScrolling({
+                scrollPositionRestoration: 'enabled',
+                anchorScrolling: 'enabled',
+            }),
             withComponentInputBinding(),
             withPreloading(PreloadAllModules),
         ),

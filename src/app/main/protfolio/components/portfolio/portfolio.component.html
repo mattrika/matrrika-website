@@ -1,53 +1,35 @@
-<section class="bg-white">
-    <h1 class="p-4 text-center text-4xl text-gray-800">Portfolio</h1>
-    <dui-accordion>
-        <dui-accordion-expansion [alwaysOpen]="true" className="mb-2 rounded-lg border border-blue-gray-100 px-4">
-            <dui-accordion-header
-                title="Microsoft Dynamics 365"
-                className="border-b-0 transition-colors text-blue-500 hover:!text-blue-700"
-            >
-            </dui-accordion-header>
-            <dui-accordion-body className="pt-1 text-base font-normal">
-                <img
-                    class="w-full"
-                    src="https://www.4waystech.com/wp-content/uploads/2022/12/dynamics-365-entrada-blog-01.jpg"
-                    alt="info Picture"
-                />
-                <div class="mt-8 text-lg">
-                    We're not always in the position that we want to be at. We're constantly growing. We're constantly
-                    making mistakes. We're constantly trying to express ourselves and actualize our dreams.
+<section class="text-gray-600 body-font">
+    <div class="mx-auto px-5 py-24 container">
+                <div class="flex flex-col flex-wrap items-center mb-20 w-full text-center">
+            <h1 class="mb-2 font-medium text-2xl text-gray-900 sm:text-3xl title-font">Portfolio</h1>
+            <p class="w-full lg:w-1/2 text-gray-500 leading-relaxed">
+                Some of our ongoing and completed projects we are proud of.
+            </p>
+        </div>
+        <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            @for (item of items; track $index) {
+                <div class="mb-10 px-4 sm:w-1/2">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img
+                            alt="content"
+                            class="object-top w-full h-full object-cover"
+                            src="./../../../../../assets/portfolio/{{ item.image }}"
+                        >
+                    </div>
+                    <h2 class="mt-6 mb-3 font-medium text-2xl text-gray-900 title-font">
+                        {{ item.title }}
+                    </h2>
+                    <p class="text-base leading-relaxed">
+                        {{ item.content }}
+                    </p>
+                    <div class="flex justify-center items-center">
+
+                        <a [href]="item.url" target="_blank" class="flex border-0 bg-teal-500 hover:bg-teal-600 mx-auto mt-6 px-5 py-2 rounded text-white focus:outline-none">
+                            Visit Site
+                        </a>
+                    </div>
                 </div>
-            </dui-accordion-body>
-        </dui-accordion-expansion>
-        <dui-accordion-expansion className="mb-2 rounded-lg border border-blue-gray-100 px-4">
-            <dui-accordion-header title="I want to develop software. How much will it cost?"></dui-accordion-header>
-            <dui-accordion-body className="pt-0 text-base font-normal">
-                We&apos;re not always in the position that we want to be at. We&apos;re constantly growing. We&apos;re
-                constantly making mistakes. We&apos;re constantly trying to express ourselves and actualize our dreams.
-            </dui-accordion-body>
-        </dui-accordion-expansion>
-        <dui-accordion-expansion className="mb-2 rounded-lg border border-blue-gray-100 px-4">
-            <dui-accordion-header title="Why does my project require a Business Analyst?"></dui-accordion-header>
-            <dui-accordion-body className="pt-0 text-base font-normal">
-                We&apos;re not always in the position that we want to be at. We&apos;re constantly growing. We&apos;re
-                constantly making mistakes. We&apos;re constantly trying to express ourselves and actualize our dreams.
-            </dui-accordion-body>
-        </dui-accordion-expansion>
-        <dui-accordion-expansion className="mb-2 rounded-lg border border-blue-gray-100 px-4">
-            <dui-accordion-header title="What do I need to know before contacting you?"></dui-accordion-header>
-            <dui-accordion-body className="pt-0 text-base font-normal">
-                We&apos;re not always in the position that we want to be at. We&apos;re constantly growing. We&apos;re
-                constantly making mistakes. We&apos;re constantly trying to express ourselves and actualize our dreams.
-            </dui-accordion-body>
-        </dui-accordion-expansion>
-        <dui-accordion-expansion className="mb-2 rounded-lg border border-blue-gray-100 px-4">
-            <dui-accordion-header
-                title="I want to be involved in development process. Will it be ok?"
-            ></dui-accordion-header>
-            <dui-accordion-body className="pt-0 text-base font-normal">
-                We&apos;re not always in the position that we want to be at. We&apos;re constantly growing. We&apos;re
-                constantly making mistakes. We&apos;re constantly trying to express ourselves and actualize our dreams.
-            </dui-accordion-body>
-        </dui-accordion-expansion>
-    </dui-accordion>
+            }
+        </div>
+    </div>
 </section>

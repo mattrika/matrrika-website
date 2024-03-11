@@ -15,7 +15,7 @@ export function getHomeRoutes(): HomeRoutes {
     return {
         index: {
             path: '',
-            title: 'Home',
+            title: 'Mattrika Technologies - Home',
             resolve: { layout: setLayout(PageLayout.Default) },
             loadComponent: () => import('./home.component'),
         },

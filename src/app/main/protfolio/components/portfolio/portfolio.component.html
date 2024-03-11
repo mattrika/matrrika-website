@@ -6,13 +6,13 @@
                 Some of our ongoing and completed projects we are proud of.
             </p>
         </div>
-        <div class="-mx-4 -mb-10 flex flex-wrap text-center">
+        <div class="-mx-4 -mb-10 flex justify-center flex-wrap text-center">
             @for (item of items; track $index) {
                 <div class="mb-10 px-4 sm:w-1/2">
-                    <div class="h-64 overflow-hidden rounded-lg">
+                    <div class="h-64 overflow-hidden border-2 w-full border-gray-200 rounded-lg">
                         <img
                             alt="content"
-                            class="h-full w-full object-cover object-top"
+                            class="w-full min-h-full object-cover object-top"
                             src="./../../../../../assets/portfolio/{{ item.image }}"
                         />
                     </div>

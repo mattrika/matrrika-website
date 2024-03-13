@@ -25,6 +25,7 @@ export class HeaderOneComponent implements OnInit {
     @Input() sidenavToggleVisible = true
     @Output() sidenavToggle = new EventEmitter<void>()
 
+    menuOpen: boolean = false;
     appName = this.appState.appName
 
     constructor(public appState: AppStateService) {}
@@ -32,6 +33,10 @@ export class HeaderOneComponent implements OnInit {
     ngOnInit(): void {
         void 0
     }
+
+    toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
 
     toggle(): void {
         this.sidenavToggle.next()

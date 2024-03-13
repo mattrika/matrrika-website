@@ -8,18 +8,35 @@
             <img src="./../../../../assets/Mattrika_transparent.png" alt="logo" class="h-12 w-auto" />
             <!-- <span class="ml-3 text-xl">Tailblocks</span> -->
         </a>
-        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
-            <a [routerLink]="[]" [fragment]="'services'" class="mr-5 hover:text-gray-900">Services</a>
-            <a [routerLink]="[]" [fragment]="'about-us'" class="mr-5 hover:text-gray-900">About Us</a>
-            <a [routerLink]="[]" [fragment]="'team'" class="mr-5 hover:text-gray-900">Team</a>
-            <a [routerLink]="[]" [fragment]="'portfolio'" class="mr-5 hover:text-gray-900">Portfolio</a>
+        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto md:flex-row md:space-x-4">
+
         </nav>
         <button
-            [routerLink]="[]"
-            [fragment]="'contact'"
-            class="mt-4 inline-flex items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none md:mt-0"
+            class="mt-4 md:hidden inline-flex items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none"
+            (click)="toggleMenu()"
         >
-            Contact Us
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-6 w-6">
+                <path
+                    fill-rule="evenodd"
+                    d="M3 12a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 6a1 1 0 100 2h12a1 1 0 100-2H3zm0 6a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                />
+            </svg>
         </button>
+    </div>
+    <div class="md:hidden" [class.block]="menuOpen" [class.hidden]="!menuOpen">
+        <nav class="flex flex-col items-center justify-center text-base p-4">
+            <a [routerLink]="[]" [fragment]="'services'" class="hover:text-gray-900">Services</a>
+            <a [routerLink]="[]" [fragment]="'about-us'" class="hover:text-gray-900">About Us</a>
+            <a [routerLink]="[]" [fragment]="'team'" class="hover:text-gray-900">Team</a>
+            <a [routerLink]="[]" [fragment]="'portfolio'" class="hover:text-gray-900">Portfolio</a>
+            <button
+                [routerLink]="[]"
+                [fragment]="'contact'"
+                class="mt-4 inline-flex items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none"
+            >
+                Contact Us
+            </button>
+        </nav>
     </div>
 </header>

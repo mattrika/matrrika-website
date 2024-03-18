@@ -1,5 +1,6 @@
 <header class="body-font border-b border-solid border-gray-200 bg-white text-gray-600">
-    <div class="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
+    <div class="flex justify-between">
+        <div class=" container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
         <a
             [routerLink]="[]"
             [fragment]="'home'"
@@ -8,18 +9,65 @@
             <img src="./../../../../assets/Mattrika_transparent.png" alt="logo" class="h-12 w-auto" />
             <!-- <span class="ml-3 text-xl">Tailblocks</span> -->
         </a>
-        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
-            <a [routerLink]="[]" [fragment]="'services'" class="mr-5 hover:text-gray-900">Services</a>
-            <a [routerLink]="[]" [fragment]="'about-us'" class="mr-5 hover:text-gray-900">About Us</a>
-            <a [routerLink]="[]" [fragment]="'team'" class="mr-5 hover:text-gray-900">Team</a>
-            <a [routerLink]="[]" [fragment]="'portfolio'" class="mr-5 hover:text-gray-900">Portfolio</a>
-        </nav>
-        <button
-            [routerLink]="[]"
-            [fragment]="'contact'"
-            class="mt-4 inline-flex items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none md:mt-0"
+
+        <nav
+            class="md:flex grid flex-wrap items-center justify-center text-base md:ml-auto"
+            [class.hidden]="!isExpanded"
         >
-            Contact Us
-        </button>
+            <a [routerLink]="[]" [fragment]="'services'" class="mr-5   p-2 rounded hover:bg-gray-100 hover:text-gray-900">Services</a>
+            <a [routerLink]="[]" [fragment]="'about-us'" class="mr-5   p-2 rounded hover:bg-gray-100 hover:text-gray-900">About Us</a>
+            <a [routerLink]="[]" [fragment]="'team'" class="mr-5  p-2 rounded hover:bg-gray-100 hover:text-gray-900">Team</a>
+            <a [routerLink]="[]" [fragment]="'portfolio'" class="mr-5  p-2 rounded hover:bg-gray-100 hover:text-gray-900">Portfolio</a>
+
+
+            <button
+                [routerLink]="[]"
+                [fragment]="'contact'"
+                class="mt-4 inline-flex items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none md:mt-0"
+            >
+                Contact Us
+            </button>
+
+
+        </nav>
+
+
+
+        <div class="flex items-center gap-2">
+
+
+
+        </div>
+    </div>
+    <div class="md:hidden mr-4">
+                <!-- This will hide the button on medium and larger screens -->
+                <button
+                    (click)="toggleNavbar()"
+                    class="mt-4 grid items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none"
+                >
+                    <svg
+                        class="h-6 w-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            [ngClass]="{ block: !isExpanded, hidden: isExpanded }"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"
+                        ></path>
+                        <path
+                            [ngClass]="{ hidden: !isExpanded, block: isExpanded }"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
     </div>
 </header>

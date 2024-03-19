@@ -25,6 +25,8 @@ export class HeaderOneComponent implements OnInit {
     @Input() sidenavToggleVisible = true
     @Output() sidenavToggle = new EventEmitter<void>()
 
+     isExpanded: boolean = false;
+
     appName = this.appState.appName
 
     constructor(public appState: AppStateService) {}
@@ -35,5 +37,9 @@ export class HeaderOneComponent implements OnInit {
 
     toggle(): void {
         this.sidenavToggle.next()
+    }
+
+    toggleNavbar() {
+        this.isExpanded = !this.isExpanded;
     }
 }

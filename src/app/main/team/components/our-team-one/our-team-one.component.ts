@@ -33,7 +33,17 @@ export class OurTeamOneComponent {
         {
             name: 'Shohan Akhand',
             position: 'Web Developer',
-            image: 'mushfiq.png',
+            image: 'shohan.png',
+        },
+        {
+            name: 'Murad Ahmed',
+            position: 'Web Developer',
+            image: 'user.jpg',
+        },
+        {
+            name: 'Mehdad Hussain',
+            position: 'Web Developer',
+            image: 'mehdad.png',
         },
     ]
 }

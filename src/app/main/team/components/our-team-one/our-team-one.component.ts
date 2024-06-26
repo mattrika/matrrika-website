@@ -36,7 +36,7 @@ export class OurTeamOneComponent {
             image: 'shohan-1.png',
         },
         {
-            name: 'Murad Ahmed',
+            name: 'Md Hosne Mobarak',
             position: 'Web Developer',
             image: 'user.jpg',
         },

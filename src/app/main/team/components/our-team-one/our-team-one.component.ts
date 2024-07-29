@@ -45,5 +45,10 @@ export class OurTeamOneComponent {
             position: 'Web Developer',
             image: 'mehdad-1.png',
         },
+        {
+            name: 'Md Ferdous',
+            position: 'Web Developer',
+            image: 'ferdous.png',
+        },
     ]
 }

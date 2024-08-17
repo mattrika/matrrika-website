@@ -41,11 +41,6 @@ export class OurTeamOneComponent {
             image: 'user.jpg',
         },
         {
-            name: 'Mehdad Hussain',
-            position: 'Web Developer',
-            image: 'mehdad-1.png',
-        },
-        {
             name: 'Md Ferdous',
             position: 'Web Developer',
             image: 'ferdous.png',

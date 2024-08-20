@@ -1,22 +1,21 @@
-<section class="body-font bg-gray-200 text-gray-600">
+<section class="">
     <div class="container mx-auto px-5 py-24">
-        <div class="-m-4 flex flex-wrap text-center">
-            <div class="w-1/2 p-4 sm:w-1/4">
-                <h2 class="title-font text-3xl font-medium text-gray-900 sm:text-4xl">2023</h2>
-                <p class="leading-relaxed">Launched</p>
-            </div>
-            <div class="w-1/2 p-4 sm:w-1/4">
-                <h2 class="title-font text-3xl font-medium text-gray-900 sm:text-4xl">3+</h2>
-                <p class="leading-relaxed">Current Projects</p>
-            </div>
-            <div class="w-1/2 p-4 sm:w-1/4">
-                <h2 class="title-font text-3xl font-medium text-gray-900 sm:text-4xl">7</h2>
-                <p class="leading-relaxed">Team Members</p>
-            </div>
-            <div class="w-1/2 p-4 sm:w-1/4">
-                <h2 class="title-font text-3xl font-medium text-gray-900 sm:text-4xl">100%</h2>
-                <p class="leading-relaxed">Remote Workforce</p>
-            </div>
+        <div class="grid grid-cols-12 gap-4">
+            @for (data of statisticData; track data.id) {
+                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                    <div class="flex items-center lg:justify-center">
+                        <div class=" flex items-center justify-center text-3xl h-14 w-14 bg-black-500 text-tealBlue-400 rounded-[4px]">
+                            <ng-icon name={{data.icon}}></ng-icon>
+                        </div>
+                        <div class="ml-4">
+                            <h2 class="title-font text-3xl font-medium text-black-500 sm:text-4xl">
+                                {{ data.amount }}
+                            </h2>
+                            <p class="leading-relaxed text-black-400">{{ data.title }}</p>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 </section>

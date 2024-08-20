@@ -67,3 +67,6 @@ $RECYCLE.BIN/
 
 # dotenv environment variables file
 .env
+
+.nx/cache
+.nx/workspace-data

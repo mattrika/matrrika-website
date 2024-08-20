@@ -5,6 +5,7 @@ import { HeaderOneComponent } from '@main/headers/header-one/header-one.componen
 import { FooterOneComponent } from '../../footers/components/footer-one/footer-one.component'
 import { FooterTwoComponent } from '../../footers/components/footer-two/footer-two.component'
 import { NavbarComponent } from '../../navbar/components/navbar/navbar.component'
+import { HeaderTwoComponent } from '@main/headers/header-two/header-two.component'
 
 @Component({
     selector: 'app-layout-default',
@@ -16,6 +17,7 @@ import { NavbarComponent } from '../../navbar/components/navbar/navbar.component
         CommonModule,
         RouterModule,
         HeaderOneComponent,
+        HeaderTwoComponent,
         NavbarComponent,
         FooterOneComponent,
         FooterTwoComponent,

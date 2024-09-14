@@ -32,7 +32,7 @@
     "@angular/platform-browser-dynamic": "^17.2.4",
     "@angular/router": "^17.2.4",
     "@auth0/angular-jwt": "^5.2.0",
-    "@ng-icons/core": "^29.3.0",
+    "@ng-icons/core": "^29.5.0",
     "@ng-icons/heroicons": "^29.3.0",
     "@ng-web-apis/common": "^3.0.6",
     "david-ui-angular": "^1.1.0",

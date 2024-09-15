@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router'
 import { AppStateService } from '@core/states/app-state.service'
 import { getHomeRoutes } from '@pages/home/home.routes'
 import { Data } from 'src/assets/data/data'
-import { headerRoute, HeaderRoute } from './header-route-data'
+import { HeaderRoute, headerRoute } from './header-route-data'
 
 @Component({
     selector: 'app-header-two',
@@ -14,7 +14,7 @@ import { headerRoute, HeaderRoute } from './header-route-data'
     styleUrl: './header-two.component.scss',
 })
 export class HeaderTwoComponent {
-    public websiteLogo: string = '../../../../assets/Mattrika_technologies.png'
+    public websiteLogo = '../../../../assets/Mattrika_technologies.png'
     public websiteName: string = Data.websiteName
     headerRoute: HeaderRoute[] = headerRoute
 
@@ -22,7 +22,7 @@ export class HeaderTwoComponent {
     @Input() sidenavToggleVisible = true
     @Output() sidenavToggle = new EventEmitter<void>()
 
-    isExpanded: boolean = false
+    isExpanded = false
 
     appName = this.appState.appName
 

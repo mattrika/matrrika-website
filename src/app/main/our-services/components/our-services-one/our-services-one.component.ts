@@ -4,13 +4,13 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core'
 import { heroCodeBracket } from '@ng-icons/heroicons/outline'
 import {
     heroCodeBracketSquareSolid,
-    heroUserSolid,
+    heroCog8ToothSolid,
+    heroMoonSolid,
     heroScissorsSolid,
     heroShieldCheckSolid,
-    heroMoonSolid,
-    heroCog8ToothSolid,
+    heroUserSolid,
 } from '@ng-icons/heroicons/solid'
-import { serviceData, ServiceData } from '../our-services-data'
+import { ServiceData, serviceData } from '../our-services-data'
 
 @Component({
     selector: 'app-our-services-one',

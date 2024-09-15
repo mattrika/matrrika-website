@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common'
-import { Component, OnInit } from '@angular/core'
+import { Component, type OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
 import { BannerOneComponent } from '@main/banner/components/banner-one/banner-one.component'
 import { BannerTwoComponent } from '@main/banner/components/banner-two/banner-two.component'

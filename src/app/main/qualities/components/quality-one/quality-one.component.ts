@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
-import { qualityData, QualityData } from './quality-data'
+import { qualityData, type QualityData } from './quality-data'
 
 @Component({
     selector: 'app-quality-one',

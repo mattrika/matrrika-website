@@ -20,7 +20,8 @@ export class PortfolioComponent {
     items = [
         {
             title: 'ContentERP',
-            content: 'Article/Blog tracking system for content production, team and financial management.',
+            content:
+                'Article/Blog tracking system for content production, team and financial management.',
             image: 'contenterp.png',
             url: 'https://app.contenterp.com',
         },

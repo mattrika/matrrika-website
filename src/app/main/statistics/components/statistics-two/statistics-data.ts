@@ -1,6 +1,6 @@
 export type StatisticData = {
     id: number
-    icon:string
+    icon: string
     title: string
     amount: number | string
 }
@@ -9,14 +9,14 @@ export const statisticData: StatisticData[] = [
     {
         id: 1,
         icon: 'heroRocketLaunchSolid',
-        title: 'Launched successfully',
+        title: 'Launched',
         amount: 2023,
     },
     {
         id: 2,
         icon: 'heroDocumentTextSolid',
-        title: 'Current Projects',
-        amount: '3+',
+        title: 'Successful Projects',
+        amount: '4+',
     },
     {
         id: 3,

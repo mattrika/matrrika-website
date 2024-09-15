@@ -4,7 +4,7 @@ import {
     Component,
     EventEmitter,
     Input,
-    OnInit,
+    type OnInit,
     Output,
 } from '@angular/core'
 import { RouterModule } from '@angular/router'
@@ -24,7 +24,7 @@ export class HeaderOneComponent implements OnInit {
     @Input() sidenavToggleVisible = true
     @Output() sidenavToggle = new EventEmitter<void>()
 
-     isExpanded: boolean = false;
+    isExpanded = false
 
     appName = this.appState.appName
 
@@ -39,6 +39,6 @@ export class HeaderOneComponent implements OnInit {
     }
 
     toggleNavbar() {
-        this.isExpanded = !this.isExpanded;
+        this.isExpanded = !this.isExpanded
     }
 }

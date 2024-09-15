@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
-import { statisticData, StatisticData } from './statistics-data'
+import { statisticData, type StatisticData } from './statistics-data'
 import { NgIconComponent, provideIcons } from '@ng-icons/core'
 import {
     heroRocketLaunchSolid,

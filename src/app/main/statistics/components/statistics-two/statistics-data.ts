@@ -22,7 +22,7 @@ export const statisticData: StatisticData[] = [
         id: 3,
         icon: 'heroUserGroupSolid',
         title: 'Team Members',
-        amount: 8,
+        amount: 7,
     },
     {
         id: 1,

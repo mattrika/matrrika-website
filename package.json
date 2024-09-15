@@ -36,7 +36,6 @@
     "@ng-icons/core": "^29.5.0",
     "@ng-icons/heroicons": "^29.5.0",
     "@ng-web-apis/common": "^4.5.0",
-    "david-ui-angular": "^1.1.0",
     "flowbite": "^2.5.1",
     "prettier-eslint": "^16.3.0",
     "radash": "^12.1.0",

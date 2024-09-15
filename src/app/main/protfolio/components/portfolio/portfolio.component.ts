@@ -2,12 +2,11 @@ import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
 import { NgIconComponent, provideIcons } from '@ng-icons/core'
 import { heroArrowUpRight } from '@ng-icons/heroicons/outline'
-import { DUIAccordion } from 'david-ui-angular'
 
 @Component({
     selector: 'app-portfolio',
     standalone: true,
-    imports: [CommonModule, DUIAccordion, NgIconComponent],
+    imports: [CommonModule, NgIconComponent],
     templateUrl: './portfolio.component.html',
     styleUrl: './portfolio.component.scss',
     providers: [

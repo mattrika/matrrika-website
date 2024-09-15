@@ -1,17 +1,14 @@
 import { CommonModule } from '@angular/common'
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
-import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
-import { MatMenuModule } from '@angular/material/menu'
 import { RouterLink } from '@angular/router'
 import { AppStateService } from '@core/states/app-state.service'
 import { getHomeRoutes } from '@pages/home/home.routes'
-import { DUIButton } from 'david-ui-angular'
 
 @Component({
     selector: 'app-navbar',
     standalone: true,
-    imports: [CommonModule, RouterLink, MatIconModule, DUIButton, MatButtonModule, MatMenuModule],
+    imports: [CommonModule, RouterLink, MatIconModule],
     templateUrl: './navbar.component.html',
     styleUrl: './navbar.component.scss',
 })

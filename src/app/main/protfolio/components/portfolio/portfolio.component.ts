@@ -1,13 +1,19 @@
 import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
-import { DUIAccordion } from 'david-ui-angular'
+import { NgIconComponent, provideIcons } from '@ng-icons/core'
+import { heroArrowUpRight } from '@ng-icons/heroicons/outline'
 
 @Component({
     selector: 'app-portfolio',
     standalone: true,
-    imports: [CommonModule, DUIAccordion],
+    imports: [CommonModule, NgIconComponent],
     templateUrl: './portfolio.component.html',
     styleUrl: './portfolio.component.scss',
+    providers: [
+        provideIcons({
+            heroArrowUpRight,
+        }),
+    ],
 })
 export class PortfolioComponent {
     items = [
@@ -20,7 +26,7 @@ export class PortfolioComponent {
         },
         {
             title: 'MA Kleid',
-            content: 'Fast fashion e-commerce for German consumers.',
+            content: 'Fast fashion e-commerce for German consumers. Sales Man and women Cloths',
             image: 'makleid.png',
             url: 'https://makleid.de',
         },

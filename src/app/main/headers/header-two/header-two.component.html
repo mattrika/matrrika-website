@@ -1,33 +1,26 @@
-<header class="body-font border-b border-solid border-gray-200 bg-white/80 text-gray-600 backdrop-blur-lg">
-    <div class="my-2 flex justify-between">
+<header class="bg-banner backdrop-blur-lg">
+    <div class="flex h-[60px] justify-between">
         <div class="container ml-4 flex flex-col flex-wrap font-bold md:mx-auto md:flex-row md:items-center md:p-2">
             <a [routerLink]="[]" [fragment]="'home'" class="title-font flex items-center font-medium text-teal-500">
-                <img src="./../../../../assets/Mattrika_transparent.png" alt="logo" class="h-12 w-auto" />
-                <!-- <span class="ml-3 text-xl">Tailblocks</span> -->
+                <img [src]="websiteLogo" [alt]="websiteName" class="h-12 w-auto" />
             </a>
 
             <nav
-                class="ml-16 grid flex-wrap text-center text-base md:ml-auto md:flex md:items-center"
+                class="ml-16 grid flex-wrap space-x-4 text-center text-base md:ml-auto md:flex md:items-center"
                 [class.hidden]="!isExpanded"
             >
-                <a [routerLink]="[]" [fragment]="'services'" class="rounded p-2 hover:text-teal-500 md:mr-5"
-                    >Services</a
-                >
-                <a [routerLink]="[]" [fragment]="'about-us'" class="rounded p-2 hover:text-teal-500 md:mr-5"
-                    >About Us</a
-                >
-                <a [routerLink]="[]" [fragment]="'team'" class="rounded p-2 hover:text-teal-500 md:mr-5">Team</a>
-                <a [routerLink]="[]" [fragment]="'portfolio'" class="mr:mr-5 rounded p-2 hover:text-teal-500"
-                    >Portfolio</a
-                >
+                @for (route of headerRoute; track route.id) {
+                    <a
+                        [routerLink]="[]"
+                        [fragment]="route.url"
+                        class="mr:mr-5 rounded font-normal hover:text-teal-500"
+                        >{{ route.title }}</a
+                    >
+                }
 
-                <button
-                    [routerLink]="[]"
-                    [fragment]="'contact'"
-                    class="mb-2 mt-2 inline-flex items-center justify-center rounded border-0 bg-teal-500 px-3 py-1 text-center text-white hover:bg-teal-600 focus:outline-none md:mb-0 md:ml-4 md:mt-0"
-                >
+                <!-- <button [routerLink]="[]" [fragment]="'contact'" class="btn-fill">
                     Contact Us
-                </button>
+                </button> -->
             </nav>
 
             <div class="flex items-center gap-2"></div>

@@ -1,25 +1,23 @@
 import { CommonModule } from '@angular/common'
-import {
-    ChangeDetectionStrategy,
-    Component,
-    EventEmitter,
-    Input,
-    type OnInit,
-    Output,
-} from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { AppStateService } from '@core/states/app-state.service'
 import { getHomeRoutes } from '@pages/home/home.routes'
+import { Data } from 'src/assets/data/data'
+import { HeaderRoute, headerRoute } from './header-route-data'
 
 @Component({
-    selector: 'app-header-one',
+    selector: 'app-header-two',
     standalone: true,
     imports: [CommonModule, RouterModule],
-    templateUrl: './header-one.component.html',
-    styleUrls: ['./header-one.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
+    templateUrl: './header-two.component.html',
+    styleUrl: './header-two.component.scss',
 })
-export class HeaderOneComponent implements OnInit {
+export class HeaderTwoComponent {
+    public websiteLogo = '../../../../assets/Mattrika_technologies.png'
+    public websiteName: string = Data.websiteName
+    headerRoute: HeaderRoute[] = headerRoute
+
     readonly homeRoutes = getHomeRoutes()
     @Input() sidenavToggleVisible = true
     @Output() sidenavToggle = new EventEmitter<void>()

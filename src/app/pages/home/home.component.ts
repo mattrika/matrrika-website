@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common'
-import { Component, OnInit } from '@angular/core'
+import { Component, type OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
+import { BannerOneComponent } from '@main/banner/components/banner-one/banner-one.component'
 import { BannerTwoComponent } from '@main/banner/components/banner-two/banner-two.component'
 import { HeaderOneComponent } from '@main/headers/header-one/header-one.component'
 import { MapComponent } from '@main/maps/components/map/map.component'
@@ -19,6 +20,7 @@ import { TestimonialOneComponent } from '@main/testimonials/components/testimoni
     imports: [
         CommonModule,
         HeaderOneComponent,
+        BannerOneComponent,
         BannerTwoComponent,
         StatisticsTwoComponent,
         MapComponent,

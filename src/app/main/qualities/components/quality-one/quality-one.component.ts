@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
+import { qualityData, type QualityData } from './quality-data'
 
 @Component({
     selector: 'app-quality-one',
@@ -8,4 +9,6 @@ import { Component } from '@angular/core'
     templateUrl: './quality-one.component.html',
     styleUrl: './quality-one.component.scss',
 })
-export class QualityOneComponent {}
+export class QualityOneComponent {
+    qualityData: QualityData[] = qualityData
+}

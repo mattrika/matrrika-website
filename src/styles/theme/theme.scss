@@ -3,7 +3,7 @@
 @import './colors';
 
 $primary-palette: (
-    mat.define-palette(
+    mat.m2-define-palette(
         (
             100: $primary,
             500: $primary,
@@ -18,7 +18,7 @@ $primary-palette: (
 );
 
 $accent-palette: (
-    mat.define-palette(
+    mat.m2-define-palette(
         (
             100: $accent,
             500: $accent,
@@ -33,7 +33,7 @@ $accent-palette: (
 );
 
 $warn-palette: (
-    mat.define-palette(
+    mat.m2-define-palette(
         (
             100: $warn,
             500: $warn,
@@ -52,8 +52,8 @@ $theme: (
         primary: $primary-palette,
         accent: $accent-palette,
         warn: $warn-palette,
-        foreground: mat.$light-theme-foreground-palette,
-        background: mat.$light-theme-background-palette,
+        foreground: mat.$m2-light-theme-foreground-palette,
+        background: mat.$m2-light-theme-background-palette,
     ),
 );
 
@@ -62,7 +62,7 @@ $dark-theme: (
         primary: $primary-palette,
         accent: $accent-palette,
         warn: $warn-palette,
-        foreground: mat.$dark-theme-foreground-palette,
-        background: mat.$dark-theme-background-palette,
+        foreground: mat.$m2-dark-theme-foreground-palette,
+        background: mat.$m2-dark-theme-background-palette,
     ),
 );

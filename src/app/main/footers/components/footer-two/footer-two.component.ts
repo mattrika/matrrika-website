@@ -8,4 +8,6 @@ import { Component } from '@angular/core'
     templateUrl: './footer-two.component.html',
     styleUrl: './footer-two.component.scss',
 })
-export class FooterTwoComponent {}
+export class FooterTwoComponent {
+    year: number = new Date().getFullYear()
+}

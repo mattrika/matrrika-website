@@ -1,4 +1,4 @@
-<section class="body-font text-gray-600">
+<section class="body-font">
     <div class="container mx-auto px-5 py-24">
         <div class="mb-20 flex w-full flex-col flex-wrap items-center text-center">
             <h1 class="title-font mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">PORTFOLIO</h1>
@@ -6,30 +6,38 @@
                 Some of our ongoing and completed projects we are proud of.
             </p>
         </div>
-        <div class="-mx-4 -mb-10 flex justify-center flex-wrap text-center">
+        <div class="grid grid-cols-12 gap-4 md:gap-6">
             @for (item of items; track $index) {
-                <div class="mb-10 px-4 sm:w-1/2">
-                    <div class="h-64 overflow-hidden border-2 w-full border-gray-200 rounded-lg">
-                        <img
-                            alt="content"
-                            class="w-full min-h-full object-cover object-top"
-                            src="./../../../../../assets/portfolio/{{ item.image }}"
-                        />
-                    </div>
-                    <h2 class="title-font mb-3 mt-6 text-2xl font-medium text-gray-900">
-                        {{ item.title }}
-                    </h2>
-                    <p class="text-base leading-relaxed">
-                        {{ item.content }}
-                    </p>
-                    <div class="flex items-center justify-center">
-                        <a
-                            [href]="item.url"
-                            target="_blank"
-                            class="mx-auto mt-6 flex rounded border-0 bg-teal-500 px-5 py-2 text-white hover:bg-teal-600 focus:outline-none"
-                        >
-                            Visit Site
-                        </a>
+                <div class="col-sapn-12 md:col-span-6">
+                    <div class="bg-banner rounded-lg border">
+                        <div class="h-64 w-full overflow-hidden rounded-t-lg border-2 border-gray-200">
+                            <img
+                                alt="content"
+                                class="min-h-full w-full object-cover object-top"
+                                src="./../../../../../assets/portfolio/{{ item.image }}"
+                            />
+                        </div>
+                        <div class="px-4 pb-4">
+                            <div class="flex items-center justify-between">
+                                <div class="ml-2">
+                                    <h2 class="title-font mt-6 text-xl font-medium">
+                                        {{ item.title }}
+                                    </h2>
+                                    <p class="text-base leading-relaxed">
+                                        {{ item.content }}
+                                    </p>
+
+                                    <a
+                                        [href]="item.url"
+                                        target="_blank"
+                                        class="mt-4 inline-block font-normal text-teal-500 transition-colors duration-200 hover:text-tealBlue-700"
+                                    >
+                                        Visit site <ng-icon name="heroArrowUpRight"></ng-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center"></div>
+                        </div>
                     </div>
                 </div>
             }

@@ -11,11 +11,12 @@ import {
     heroUserSolid,
 } from '@ng-icons/heroicons/solid'
 import { ServiceData, serviceData } from '../our-services-data'
+import { NgxShineBorderComponent } from '@omnedia/ngx-shine-border'
 
 @Component({
     selector: 'app-our-services-one',
     standalone: true,
-    imports: [CommonModule, NgIconComponent],
+    imports: [CommonModule, NgIconComponent, NgxShineBorderComponent],
     templateUrl: './our-services-one.component.html',
     styleUrl: './our-services-one.component.scss',
     providers: [

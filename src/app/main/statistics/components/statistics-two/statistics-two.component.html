@@ -9,9 +9,18 @@
                         <ng-icon name="{{ data.icon }}"></ng-icon>
                     </div>
                     <div class="ml-4">
-                        <h2 class="title-font text-3xl font-medium text-black-500 sm:text-4xl">
-                            {{ data.amount }}
-                        </h2>
+                        <div class="title-font text-3xl font-medium text-black-500 sm:text-4xl">
+                            <div class="flex">
+                                <om-number-ticker [countTo]="data.amount" />
+                                @if (data.title === 'Successful Projects') {
+                                    <span>+</span>
+                                }
+                                @if (data.title === 'Remote Workforce') {
+                                    <span>%</span>
+                                }
+                            </div>
+                        </div>
+
                         <p class="leading-relaxed text-black-400">{{ data.title }}</p>
                     </div>
                 </div>

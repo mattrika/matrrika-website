@@ -160,19 +160,21 @@
         </div> -->
         <div class="grid grid-cols-12 gap-6">
             @for (service of serviceData; track service.id) {
-                <div
-                    class="custom-card col-span-12 min-h-[12.5rem] p-[1.5rem] sm:col-span-6 lg:col-span-6 xl:col-span-4"
-                >
+
                     <div
-                        class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-black-500 text-3xl font-bold text-tealBlue-300"
+                        class="custom-card col-span-12 min-h-[12.5rem] p-[1.5rem] sm:col-span-6 lg:col-span-6 xl:col-span-4"
                     >
-                        <ng-icon name="{{ service.img }}"></ng-icon>
+                        <div
+                            class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-md bg-black-500 text-3xl font-bold text-tealBlue-300"
+                        >
+                            <ng-icon name="{{ service.img }}"></ng-icon>
+                        </div>
+                        <h2 class="title-font mb-2 text-lg font-medium text-gray-900">{{ service.title }}</h2>
+                        <p class="text-base leading-relaxed">
+                            {{ service.description }}
+                        </p>
                     </div>
-                    <h2 class="title-font mb-2 text-lg font-medium text-gray-900">{{ service.title }}</h2>
-                    <p class="text-base leading-relaxed">
-                        {{ service.description }}
-                    </p>
-                </div>
+
             }
         </div>
         <!-- <button class="flex border-0 bg-teal-500 hover:bg-teal-600 mx-auto mt-16 px-8 py-2 rounded text-white focus:outline-none text-lg">Button</button> -->

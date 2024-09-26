@@ -42,7 +42,7 @@ export const serviceData: ServiceData[] = [
             'Not ready for a full-fledged project yet? We offer IT consultation services to help you plan and strategy your digital transformation journey.',
     },
     {
-        id: 4,
+        id: 6,
         img: 'heroShieldCheckSolid,',
         title: 'Security',
         description:

@@ -19,36 +19,6 @@
             <div class="flex items-center gap-2"></div>
         </div>
         <div class="my-2 mr-4 md:hidden">
-            <!-- This will hide the button on medium and larger screens -->
-
-            <!-- <button
-                (click)="toggleNavbar()"
-                class="grid items-center rounded border-0 bg-teal-500 px-3 py-1 text-white hover:bg-teal-600 focus:outline-none"
-            >
-                <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        [ngClass]="{ block: !isExpanded, hidden: isExpanded }"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                    <path
-                        [ngClass]="{ hidden: !isExpanded, block: isExpanded }"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12"
-                    ></path>
-                </svg>
-            </button> -->
-
             <div class="my-2 mr-4 md:hidden">
                 <!-- Button to toggle the drawer -->
                 <div (click)="toggleNavbar()" class="text-center">
@@ -77,7 +47,7 @@
                 @if (isExpanded) {
                     <div
                         [ngClass]="{ 'translate-x-0': isExpanded, '-translate-x-full': !isExpanded }"
-                        class="fixed left-0 top-0 z-40 h-screen w-64 overflow-y-auto bg-white p-4 transition-all duration-500 ease-in-out"
+                        class="fixed left-0 top-0 z-40 h-screen w-64 overflow-y-auto bg-white p-4 transition-all duration-500 ease-in-out shadow-lg"
                     >
                         <div class="flex items-center justify-between">
                             <a
@@ -92,7 +62,8 @@
                                 type="button"
                                 data-drawer-hide="drawer-disable-body-scrolling"
                                 aria-controls="drawer-disable-body-scrolling"
-                                class="absolute end-2.5 top-2.5 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-rose-400 hover:bg-gray-200 hover:text-gray-900"
+                                class="absolute end-2.5 top-2.5 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent
+                                 text-sm text-tealBlue-500 hover:bg-gray-200 hover:text-gray-900"
                             >
                                 <svg
                                     class="h-3 w-3"
@@ -122,7 +93,7 @@
                                             [fragment]="route.url"
                                             class="group flex items-center rounded-lg px-2 py-1 text-gray-900 hover:bg-gray-100 dark:text-gray-900"
                                         >
-                                            <ng-icon [svg]="route.icon" ></ng-icon>
+                                            <ng-icon [svg]="route.icon"></ng-icon>
 
                                             <span class="ms-3">{{ route.title }}</span>
                                         </a>

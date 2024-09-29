@@ -1,35 +1,51 @@
 <section class="bg-banner">
-    <om-background-beams [gradientColorValues]="['#b077dd', '#8c74f6', '#70FFF1']">
-        <div class="container mx-auto items-center px-5 py-20 md:py-24">
-            <div class="mb-16">
-                <h1
-                    class="title-font mx-auto mb-3 max-w-[670px] text-center text-3xl font-semibold text-black-500 sm:text-5xl lg:text-5xl
-                    lg:!leading-[3.5rem]"
-                >
-                    The web dev
-                    <om-gradient-text
-                        [text]="'agency'"
-                        [gradientStart]="'#009688'"
-                        [gradientEnd]="'#00E0CA'"
-                    ></om-gradient-text>
-                    <br />
-                    that
-                    <om-gradient-text
-                        [text]="'puts'"
-                        [gradientStart]="'#009688'"
-                        [gradientEnd]="'#00E0CA'"
-                    ></om-gradient-text>
-                    you at the center
-                </h1>
-                <p class="mx-auto mb-8 max-w-[580px] text-center font-normal leading-relaxed text-black-400">
-                    Mattrika Technologies stands out in the crowded digital landscape with its unique approach.
-                </p>
-                <div class="text-center">
-                    <button [routerLink]="[]" [fragment]="'contact'" class="btn-fill px-6 py-3 text-xl font-bold">
-                        Contact Us
-                    </button>
+    <div class="container mx-auto px-5 lg:py-6 xl:px-14">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 lg:col-span-6">
+                <div class="pt-14">
+                    <h1
+                        class="title-font mb-3 max-w-[450px] text-3xl font-semibold text-black-500 sm:text-5xl lg:text-5xl lg:!leading-[3.5rem]"
+                    >
+                        The web dev
+                        <om-gradient-text
+                            [text]="'agency'"
+                            [gradientStart]="'#009688'"
+                            [gradientEnd]="'#00E0CA'"
+                        ></om-gradient-text>
+                        that
+                        <om-gradient-text
+                            [text]="'puts'"
+                            [gradientStart]="'#009688'"
+                            [gradientEnd]="'#00E0CA'"
+                        ></om-gradient-text>
+                        you at the center
+                    </h1>
+                    <p class="mb-8 max-w-[480px] font-normal leading-relaxed text-black-400">
+                        Mattrika Technologies stands out in the crowded digital landscape with its unique approach.
+                    </p>
+                    <div>
+                        <button
+                            [routerLink]="[]"
+                            [fragment]="'contact-us'"
+                            class="btn-fill px-6 py-3 text-xl font-bold"
+                        >
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-6 hidden sm:inline-block">
+                <div class="max-w-[100%]">
+                    <om-three-globe
+                        [globeConfig]="{
+                            globeColor: '#007A6E',
+                            autoRotateSpeed: 0.9,
+                        }"
+                        [arcAndRingColors]="['#ff6b6b', '#f06595', '#faa2c1']"
+                        globeSize="500px"
+                    />
                 </div>
             </div>
         </div>
-    </om-background-beams>
+    </div>
 </section>

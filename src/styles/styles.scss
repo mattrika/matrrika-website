@@ -68,4 +68,7 @@ body {
     .title-font {
         @apply text-black-500;
     }
+    .icon-lg{
+        @apply flex h-14 w-14 items-center justify-center rounded-[4px] bg-tealBlue-500 text-3xl text-white;
+    }
 }

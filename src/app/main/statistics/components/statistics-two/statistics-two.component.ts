@@ -8,11 +8,12 @@ import {
     heroUserGroupSolid,
     heroHomeModernSolid,
 } from '@ng-icons/heroicons/solid'
+import { NgxNumberTickerComponent } from '@omnedia/ngx-number-ticker'
 
 @Component({
     selector: 'app-statistics-two',
     standalone: true,
-    imports: [CommonModule, NgIconComponent],
+    imports: [CommonModule, NgIconComponent, NgxNumberTickerComponent],
     templateUrl: './statistics-two.component.html',
     styleUrl: './statistics-two.component.scss',
     providers: [

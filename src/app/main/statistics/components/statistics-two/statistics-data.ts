@@ -2,7 +2,7 @@ export type StatisticData = {
     id: number
     icon: string
     title: string
-    amount: number | string
+    amount: number
 }
 
 export const statisticData: StatisticData[] = [
@@ -16,7 +16,7 @@ export const statisticData: StatisticData[] = [
         id: 2,
         icon: 'heroDocumentTextSolid',
         title: 'Successful Projects',
-        amount: '4+',
+        amount: 4,
     },
     {
         id: 3,
@@ -25,9 +25,9 @@ export const statisticData: StatisticData[] = [
         amount: 7,
     },
     {
-        id: 1,
+        id: 4,
         icon: 'heroHomeModernSolid',
         title: 'Remote Workforce',
-        amount: '100%',
+        amount: 100,
     },
 ]

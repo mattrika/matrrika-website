@@ -1,0 +1,54 @@
+<section class="body-font bg-[#f5f7fa]">
+    <div class="mx-auto max-w-6xl py-24">
+        <div class="mb-20 text-center">
+            <h1 class="title-font text-black mb-4 text-2xl font-medium sm:text-3xl">FAQs</h1>
+            <p class="mx-auto text-base leading-relaxed lg:w-3/4 xl:w-2/4">
+              Do you have any additional questions or concerns?
+            </p>
+        </div>
+
+        <div id="accordion-color">
+            <div *ngFor="let item of faqData; let i = index">
+                <h2 [id]="'accordion-color-heading-' + item.id">
+                    <button
+                        type="button"
+                        class="flex w-full items-center justify-between gap-3  border-t last:border-t-0 last:border-b border-gray-200 p-5 font-medium text-gray-500 "
+                        (click)="toggleAccordion(i)"
+                        [attr.aria-expanded]="isOpen(i)"
+                        [attr.aria-controls]="'accordion-color-body-' + item.id"
+                    >
+                        <span>{{ item.question }}</span>
+                        <svg
+                            [ngClass]="{ 'rotate-180 transition-transform duration-200': isOpen(i) }"
+                            class="h-3 w-3 shrink-0"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 10 6"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5 5 1 1 5"
+                            />
+                        </svg>
+                    </button>
+                </h2>
+                <div
+                    [id]="'accordion-color-body-' + item.id"
+                    [ngClass]="{
+                        'max-h-0 opacity-0 transition-all duration-300': !isOpen(i),
+                        'max-h-screen opacity-100 transition-all duration-300': isOpen(i),
+                    }"
+                    [attr.aria-labelledby]="'accordion-color-heading-' + item.id"
+                >
+                    <div class="p-5">
+                        <p class="mb-2 text-gray-500">{{ item.answer }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

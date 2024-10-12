@@ -3,6 +3,7 @@ import { Component, type OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
 import { BannerOneComponent } from '@main/banner/components/banner-one/banner-one.component'
 import { BannerTwoComponent } from '@main/banner/components/banner-two/banner-two.component'
+import { FaqComponent } from '@main/faq/components/faq/faq.component'
 import { HeaderOneComponent } from '@main/headers/header-one/header-one.component'
 import { MapComponent } from '@main/maps/components/map/map.component'
 import { OurServicesOneComponent } from '@main/our-services/components/our-services-one/our-services-one.component'
@@ -29,6 +30,7 @@ import { TestimonialOneComponent } from '@main/testimonials/components/testimoni
         OurTeamOneComponent,
         TestimonialOneComponent,
         PortfolioComponent,
+        FaqComponent,
     ],
 })
 export default class HomeComponent implements OnInit {

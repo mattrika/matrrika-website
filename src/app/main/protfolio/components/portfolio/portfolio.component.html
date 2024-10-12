@@ -6,14 +6,14 @@
                 Some of our ongoing and completed projects we are proud of.
             </p>
         </div>
-        <div class="grid grid-cols-12 gap-4 md:gap-6">
+        <div class="grid grid-cols-12 gap-4 lg:gap-6">
             @for (item of items; track $index) {
-                <div class="col-span-12 md:col-span-6">
+                <div class="col-span-12 lg:col-span-4">
                     <div class="bg-banner rounded-lg border">
-                        <div class="h-64 w-full overflow-hidden rounded-t-lg border-2 border-gray-200">
+                        <div class="h-64 w-full overflow-hidden rounded-t-lg">
                             <img
                                 alt="content"
-                                class="min-h-full w-full object-cover object-top"
+                                class="min-h-full w-full object-cover object-top rounded-t-lg "
                                 src="./../../../../../assets/portfolio/{{ item.image }}"
                             />
                         </div>
@@ -23,7 +23,7 @@
                                     <h2 class="title-font mt-6 text-xl font-medium">
                                         {{ item.title }}
                                     </h2>
-                                    <p class="text-base leading-relaxed">
+                                    <p class="text-sm leading-relaxed">
                                         {{ item.content }}
                                     </p>
 

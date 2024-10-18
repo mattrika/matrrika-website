@@ -1,11 +1,18 @@
 <section class="body-font">
     <div class="container mx-auto px-5 py-24">
-        <div class="mb-20 flex w-full flex-col flex-wrap items-center text-center">
-            <h1 class="title-font mb-2 text-2xl font-medium text-gray-900 sm:text-3xl">PORTFOLIO</h1>
-            <p class="w-full leading-relaxed text-gray-500 lg:w-1/2">
+        <!-- <div class="mb-20 flex w-full flex-col flex-wrap items-center text-center">
+            <h1 class="section-title">PORTFOLIO</h1>
+            <p class="section-subtitle">
                 Some of our ongoing and completed projects we are proud of.
             </p>
-        </div>
+        </div> -->
+        <app-section-headers
+            icon="bx bxs-briefcase-alt-2"
+            [title]="'PORTFOLIO'"
+            details="Some of our ongoing and completed projects that we are proud of highlight our commitment to excellence and innovation"
+        >
+            Transforming <span class="text-tealBlue-500">ideas</span> into reality
+        </app-section-headers>
         <div class="grid grid-cols-12 gap-4 lg:gap-6">
             @for (item of items; track $index) {
                 <div class="col-span-12 lg:col-span-4">
@@ -13,7 +20,7 @@
                         <div class="h-64 w-full overflow-hidden rounded-t-lg">
                             <img
                                 alt="content"
-                                class="min-h-full w-full object-cover object-top rounded-t-lg "
+                                class="min-h-full w-full rounded-t-lg object-cover object-top"
                                 src="./../../../../../assets/portfolio/{{ item.image }}"
                             />
                         </div>

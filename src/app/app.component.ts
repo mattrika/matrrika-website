@@ -1,38 +1,42 @@
-import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
-import { RouterModule } from '@angular/router'
-import { AppStateService } from '@core/states/app-state.service'
-import { LayoutCenteredComponent } from '@main/layout/layout-centered/layout-centered.component'
-import { LayoutDefaultComponent } from '@main/layout/layout-default/layout-default.component'
-import { LayoutSidebarComponent } from '@main/layout/layout-sidebar/layout-sidebar.component'
-import { PageLayout } from '@main/layout/page-layout.enum'
-import { PageLayoutService } from '@main/layout/page-layout.service'
-import HomeComponent from '@pages/home/home.component'
-import { take, timer } from 'rxjs'
-
+import {BannerComponent} from './design-01/main/components/banners/banner/banner.component'
+import { BannerOneComponent } from './design-01/main/components/banners/banner-one/banner-one.component'
+import { BannerTwoComponent } from './design-01/main/components/banners/banner-two/banner-two.component'
+import { FaqComponent } from './design-01/main/components/faq/faq/faq.component'
+import { FeaturesComponent } from './design-01/main/components/features/features/features.component'
+import { HeaderOneComponent } from './design-01/main/components/headers/header-one/header-one.component'
+import { FooterTwoComponent } from './design-01/main/components/footers/footer-two/footer-two.component'
+import { HeaderTwoComponent } from './design-01/main/components/headers/header-two/header-two.component'
+import { MapComponent } from './design-01/main/components/maps/map/map.component'
+import { NavbarComponent } from './design-01/main/components/navbar/navbar/navbar.component'
+import { OurServicesOneComponent } from './design-01/main/components/our-services/our-services-one/our-services-one.component'
+import { PortfolioComponent } from "./design-01/main/components/protfolio/portfolio/portfolio.component";
+import { QualityOneComponent } from './design-01/main/components/qualities/quality-one/quality-one.component'
+import { StatisticsComponent } from './design-01/main/components/statistics/statistics/statistics.component'
+import { StatisticsTwoComponent } from './design-01/main/components/statistics/statistics-two/statistics-two.component'
+import { OurTeamOneComponent } from './design-01/main/components/team/our-team-one/our-team-one.component'
+import { TestimonialOneComponent } from './design-01/main/components/testimonials/testimonial-one/testimonial-one.component'
 @Component({
-    standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     imports: [
-        CommonModule,
-        RouterModule,
-        LayoutCenteredComponent,
-        LayoutDefaultComponent,
-        LayoutSidebarComponent,
-        HomeComponent,
+        BannerComponent,
+        BannerOneComponent,
+        BannerTwoComponent,
+        FaqComponent,
+        FeaturesComponent,
+        FooterTwoComponent,
+        HeaderOneComponent,
+        HeaderTwoComponent,
+        MapComponent,
+        NavbarComponent,
+        OurServicesOneComponent,
+        PortfolioComponent,
+        QualityOneComponent,
+        StatisticsComponent,
+        StatisticsTwoComponent,
+        OurTeamOneComponent,
+        TestimonialOneComponent,
     ],
 })
-export class AppComponent {
-    readonly PageLayout = PageLayout
-
-    constructor(
-        public appState: AppStateService,
-        public pageLayoutService: PageLayoutService,
-    ) {
-        // stop initial loading spinner after 1 sec
-        timer(1000)
-            .pipe(take(1))
-            .subscribe({ next: () => this.appState.stopLoading() })
-    }
-}
+export class AppComponent {}

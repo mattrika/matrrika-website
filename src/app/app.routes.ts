@@ -1,20 +1,22 @@
-import { Route } from '@angular/router'
-import { HomeRoutes, getHomeRoutes } from '@pages/home/home.routes'
-import { NotFoundPageRoutes, getNotFoundPageRoutes } from '@pages/not-found/not-found.routes'
+import { Routes } from '@angular/router'
 
-type GroupedRoutes = [
-    HomeRoutes,
-    // catch-all route must be last
-    NotFoundPageRoutes,
+export const routes: Routes = [
+    {
+        path: '',
+        loadComponent: () => import('./pages/landing-page-two/landing-page-two.component').then((m) => m.LandingPageTwoComponent),
+    },
+    // {
+    //     path: '',
+    //     loadComponent: () => import('./pages/landing-page-one/landing-page-one.component').then((m) => m.LandingPageOneComponent),
+    // },
+    {
+        path: 'home',
+        redirectTo: '',
+        pathMatch: 'full',
+    },
+    {
+        path: '**',
+        loadComponent: () =>
+            import('./pages/not-found-page/not-found-page.component').then((m) => m.NotFoundPageComponent),
+    },
 ]
-
-const groupedRoutes: GroupedRoutes = [getHomeRoutes(), getNotFoundPageRoutes()]
-
-const flattenedRoutes: Route[] = []
-// biome-ignore lint/complexity/noForEach: <explanation>
-groupedRoutes.forEach((routeGroup) => {
-    // biome-ignore lint/complexity/noForEach: <explanation>
-    Object.values(routeGroup).forEach((route) => flattenedRoutes.push(route))
-})
-
-export const AppRoutes = flattenedRoutes

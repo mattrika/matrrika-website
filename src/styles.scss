@@ -89,7 +89,7 @@ body {
 }
 
 .section-title {
-    @apply my-10 text-center md:my-14 xl:my-20 md:text-left;
+    @apply my-10 md:my-14 xl:my-20 text-left;
 
     h2 {
         @apply text-4xl sm:text-6xl xl:text-8xl text-transparent font-bold leading-relaxed sm:my-2.5 xl:my-0;
@@ -101,7 +101,7 @@ body {
     }
 
     p {
-        @apply text-base sm:text-xl;
+        @apply text-base md:text-xl sm:text-xl;
     }
 }
 

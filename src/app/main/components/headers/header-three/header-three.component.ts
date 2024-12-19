@@ -3,12 +3,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, inject, OnDestroy, 
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-header-three',
   imports: [RouterModule,NgStyle,NgClass],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  templateUrl: './header-three.component.html',
+  styleUrl: './header-three.component.scss'
 })
-export class HeaderComponent implements AfterViewInit, OnDestroy {
+export class HeaderThreeComponent implements AfterViewInit, OnDestroy {
   renderer = inject(Renderer2);
   documentClickListener: (() => void) | null = null;
 

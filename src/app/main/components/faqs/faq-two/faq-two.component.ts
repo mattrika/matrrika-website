@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-faq',
+  selector: 'app-faq-two',
   imports: [],
-  templateUrl: './faq.component.html',
-  styleUrl: './faq.component.scss'
+  templateUrl: './faq-two.component.html',
+  styleUrl: './faq-two.component.scss'
 })
-export class FaqComponent {
+export class FaqTwoComponent {
   togleAnswer(answer: HTMLDivElement, plusicon: HTMLSpanElement) {
-    answer.classList.toggle('max-h-80'); // Toggle the max-height (adjust as needed)
-    answer.classList.toggle('max-h-0');  // Collapse when not active
-    plusicon.classList.toggle('rotate-45'); // Rotate from + to ×
+    answer.classList.toggle('max-h-80');
+    answer.classList.toggle('max-h-0');
+    plusicon.classList.toggle('rotate-45');
   }
 
 

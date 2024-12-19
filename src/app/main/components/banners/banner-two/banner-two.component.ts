@@ -5,14 +5,14 @@ import { NgxGradientTextComponent } from '@omnedia/ngx-gradient-text'
  import { NgxThreeGlobeComponent } from '@omnedia/ngx-three-globe'
 
  @Component({
-     selector: 'app-banner-one',
+     selector: 'app-banner-two',
      imports: [
          CommonModule,
          RouterModule,
          NgxGradientTextComponent,
          NgxThreeGlobeComponent,
      ],
-     templateUrl: './banner-one.component.html',
-     styleUrl: './banner-one.component.scss',
+     templateUrl: './banner-two.component.html',
+     styleUrl: './banner-two.component.scss',
  })
- export class BannerOneComponent {}
+ export class BannerTwoComponent {}

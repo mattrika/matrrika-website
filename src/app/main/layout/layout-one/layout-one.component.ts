@@ -5,10 +5,10 @@ import { FooterTwoComponent } from './../../components/footers/footer-two/footer
 import { HeaderTwoComponent } from './../../components/headers/header-two/header-two.component'
 
 @Component({
-    selector: 'app-layout-default',
+    selector: 'app-layout-one',
     standalone: true,
-    templateUrl: './layout-default.component.html',
-    styleUrls: ['./layout-default.component.scss'],
+    templateUrl: './layout-one.component.html',
+    styleUrls: ['./layout-one.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
         CommonModule,
@@ -17,4 +17,4 @@ import { HeaderTwoComponent } from './../../components/headers/header-two/header
         FooterTwoComponent,
     ],
 })
-export class LayoutDefaultComponent {}
+export class LayoutOneComponent {}

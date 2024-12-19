@@ -1,12 +1,11 @@
-import { AfterViewInit, Component } from '@angular/core';
-
+import { Component } from '@angular/core';
 @Component({
-  selector: 'app-testimonial',
-  imports: [],
-  templateUrl: './testimonial.component.html',
-  styleUrl: './testimonial.component.scss'
+    selector: 'app-testimonial-two',
+    imports: [],
+    templateUrl: './testimonial-two.component.html',
+    styleUrl: './testimonial-two.component.scss',
 })
-export class TestimonialComponent {
+export class TestimonialTwoComponent {
 
 }
 

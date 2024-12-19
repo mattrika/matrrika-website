@@ -2,9 +2,9 @@ import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
 
 @Component({
-    selector: 'app-features',
+    selector: 'app-feature-one',
     imports: [CommonModule],
-    templateUrl: './features.component.html',
-    styleUrl: './features.component.scss',
+    templateUrl: './feature-one.component.html',
+    styleUrl: './feature-one.component.scss',
 })
-export class FeaturesComponent {}
+export class FeatureOneComponent {}

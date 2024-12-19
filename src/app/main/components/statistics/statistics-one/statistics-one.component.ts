@@ -2,9 +2,9 @@ import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
 
 @Component({
-    selector: 'app-statistics',
+    selector: 'app-statistics-one',
     imports: [CommonModule],
-    templateUrl: './statistics.component.html',
-    styleUrl: './statistics.component.scss',
+    templateUrl: './statistics-one.component.html',
+    styleUrl: './statistics-one.component.scss',
 })
-export class StatisticsComponent {}
+export class StatisticsOneComponent {}

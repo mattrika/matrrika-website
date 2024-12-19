@@ -1,6 +1,6 @@
 <header class="w-full overflow-x-clip top-0 left-0" [ngClass]="isScrolled? 'fixed-header-bg': '' "   [ngStyle]="{'position': isScrolled ? 'fixed' : 'relative','z-index':isScrolled? 50:0}" >
   <div class="flex justify-between items-center w-full container mx-auto p-2 md:p-4 ">
-    <img src="/mattrika_logo.png" alt="" class="w-40 lg:w-48 cursor-pointer" routerLink="/">
+    <img src="./../../../../../assets/mattrika_logo.png" alt="" class="w-40 lg:w-48 cursor-pointer" routerLink="/">
     <button id="menuButton" class="text-4xl bx bx-menu md:hidden" (click)="ToggleMobileNav()"></button>
 
     <div class="hidden md:flex space-x-4">
@@ -18,7 +18,7 @@
 <!-- mobile nav drawer -->
 <div class="fixed top-0 -left-full mobile-nav-bg w-full sm:w-80 h-full rounded-tr-xl rounded-br-xl py-2.5 transition-all duration-300 ease-linear z-50" #mobileNavDrawer id="mobileNavDrawer">
   <div class="flex justify-between sm:justify-center items-center px-4 w-full">
-    <img src="/mattrika_logo.png" alt="" class="w-40" routerLink="/">
+    <img src="./../../../../../assets/mattrika_logo.png" alt="" class="w-40" routerLink="/">
     <button class="text-4xl bx bx-x sm:hidden" (click)="ToggleMobileNav()"></button>
   </div>
 

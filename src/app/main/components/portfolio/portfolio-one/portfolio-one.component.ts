@@ -5,17 +5,17 @@ import { heroArrowUpRight } from '@ng-icons/heroicons/outline'
 import { SectionHeadersComponent } from './../../../../shared/section-headers/section-headers.component'
 
 @Component({
-    selector: 'app-portfolio',
+    selector: 'app-portfolio-one',
     imports: [CommonModule, NgIconComponent, SectionHeadersComponent],
-    templateUrl: './portfolio.component.html',
-    styleUrl: './portfolio.component.scss',
+    templateUrl: './portfolio-one.component.html',
+    styleUrl: './portfolio-one.component.scss',
     providers: [
         provideIcons({
             heroArrowUpRight,
         }),
     ],
 })
-export class PortfolioComponent {
+export class PortfolioOneComponent {
     items = [
         {
             title: 'ContentERP',

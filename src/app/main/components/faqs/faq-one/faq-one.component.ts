@@ -8,12 +8,12 @@ interface FaqData {
     answer: string
 }
 @Component({
-    selector: 'app-faq',
+    selector: 'app-faq-one',
     imports: [CommonModule],
-    templateUrl: './faq.component.html',
-    styleUrl: './faq.component.scss',
+    templateUrl: './faq-one.component.html',
+    styleUrl: './faq-one.component.scss',
 })
-export class FaqComponent implements OnInit {
+export class FaqOneComponent implements OnInit {
     isOpen = false
     ngOnInit(): void {
         initFlowbite()

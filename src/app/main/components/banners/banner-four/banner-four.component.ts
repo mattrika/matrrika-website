@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-hero',
+  selector: 'app-banner-four',
   imports: [RouterModule],
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+  templateUrl: './banner-four.component.html',
+  styleUrl: './banner-four.component.scss'
 })
-export class HeroComponent {
+export class BannerFourComponent {
 
 }

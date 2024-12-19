@@ -16,14 +16,6 @@ module.exports = {
                         width: '100%',
                     },
                 },
-                blink: {
-                    '50%': {
-                        borderColor: 'transparent',
-                    },
-                    '100%': {
-                        borderColor: 'white',
-                    },
-                },
 
                 typewriter: {
                     to: {
@@ -55,6 +47,10 @@ module.exports = {
             },
 
             colors: {
+                secondary: '#00B2B2',
+                secondaryLight: '#B8FFFF',
+                linkColorPrimary: '#2BAAE0',
+                borderPrimary: '#D6CACA59',
                 tealBlue: {
                     50: '#DBFFFB',
                     100: '#B8FFF8',
@@ -94,7 +90,7 @@ module.exports = {
                     900: '#0A0A0A',
                     950: '#050505',
                 },
-            }, 
+            },
         },
     },
     variants: {

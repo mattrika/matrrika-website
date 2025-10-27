@@ -21,6 +21,11 @@ export class PortfolioTwoComponent implements AfterViewInit {
             imagePath: '/quizzaro.png',
             title: 'Quizzaro',
         },
+
+        {
+            imagePath: '/Sheresta.png',
+            title: 'Sheresta.png',
+        },
     ]
     ngAfterViewInit(): void {
         gsap.registerPlugin(ScrollTrigger)
@@ -44,6 +49,7 @@ export class PortfolioTwoComponent implements AfterViewInit {
                 .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
                 .to('#contentERP', { y: -958 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#sheresta', { y: -1300 }, '<-3') // added Sheresta
         } else if (window.innerWidth >= 640 && window.innerWidth < 768) {
             gsap.timeline({
                 scrollTrigger: {
@@ -63,6 +69,7 @@ export class PortfolioTwoComponent implements AfterViewInit {
                 .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
                 .to('#contentERP', { y: -961 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#sheresta', { y: -1330 }, '<-3')
         } else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
             gsap.timeline({
                 scrollTrigger: {
@@ -82,6 +89,7 @@ export class PortfolioTwoComponent implements AfterViewInit {
                 .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
                 .to('#contentERP', { y: -876 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#sheresta', { y: -1200 }, '<-3')
         } else if (window.innerWidth >= 1024 && window.innerWidth < 1280) {
             gsap.timeline({
                 scrollTrigger: {
@@ -101,6 +109,7 @@ export class PortfolioTwoComponent implements AfterViewInit {
                 .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
                 .to('#contentERP', { y: -1021 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#sheresta', { y: -1440 }, '<-3')
         } else {
             gsap.timeline({
                 scrollTrigger: {
@@ -118,8 +127,9 @@ export class PortfolioTwoComponent implements AfterViewInit {
                 .to('#makhelid', { y: -150, scale: 0.85 })
                 .to('#quaziro', { y: -596, scale: 0.9 }, '<+4')
                 .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
-                .to('#contentERP', { y: -1024 }, '<-5')
+                .to('#contentERP', { y: -1024, scale: 0.95 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#sheresta', { y: -1330 }, '<-3')
         }
     }
 }

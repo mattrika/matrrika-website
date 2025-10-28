@@ -124,12 +124,26 @@ export class PortfolioTwoComponent implements AfterViewInit {
                     duration: 10,
                 },
             })
-                .to('#makhelid', { y: -150, scale: 0.85 })
+                // .to('#makhelid', { y: -150, scale: 0.85 })
+                // .to('#quaziro', { y: -596, scale: 0.9 }, '<+4')
+                // .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
+                // .to('#contentERP', { y: -1024, scale: 0.95 }, '<-5')
+                // .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                // .to('#sheresta', { y: -1330 }, '<-3')
+                // -------------
+                // .to('#sheresta', { y: -150, scale: 0.85 })
+                // .to('#quaziro', { y: -596, scale: 0.9 }, '<+4')
+                // .to('#sherestapic', { opacity: 0.2, duration: 1 }, '>-0.5')
+                // .to('#contentERP', { y: -1024, scale: 0.95 }, '<-5')
+                // .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                // .to('#makhelid', { y: -1330 }, '<-3')
+                // -----------------
+                .to('#sheresta', { y: -150, scale: 0.85 })
                 .to('#quaziro', { y: -596, scale: 0.9 }, '<+4')
-                .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
+                .to('#sherestapic', { opacity: 0.2, duration: 1 }, '>-0.5')
                 .to('#contentERP', { y: -1024, scale: 0.95 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
-                .to('#sheresta', { y: -1330 }, '<-3')
+                .to('#makhelid', { y: -1330 }, '<-3')
         }
     }
 }

@@ -14,12 +14,17 @@ export class PortfolioTwoComponent implements AfterViewInit {
             title: 'ContentERP',
         },
         {
-            imagePath: '/makleid.png',
-            title: 'MA Kleid',
+            imagePath: '/lieblingsmode.png',
+            title: 'Lieblingsmode',
         },
         {
             imagePath: '/quizzaro.png',
             title: 'Quizzaro',
+        },
+
+        {
+            imagePath: '/Sheresta.png',
+            title: 'Sheresta.png',
         },
     ]
     ngAfterViewInit(): void {
@@ -39,11 +44,12 @@ export class PortfolioTwoComponent implements AfterViewInit {
                     duration: 10,
                 },
             })
-                .to('#makhelid', { scale: 0.9 })
+                .to('#sheresta', { scale: 0.9 })
                 .to('#quaziro', { y: -470, scale: 0.95 }, '<+4')
-                .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
-                .to('#contentERP', { y: -958 }, '<-5')
+                .to('#sherestapic', { opacity: 0.2, duration: 1 }, '>-0.5')
+                .to('#lieblingsmode', { y: -958 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#contentERP', { y: -1300 }, '<-3')
         } else if (window.innerWidth >= 640 && window.innerWidth < 768) {
             gsap.timeline({
                 scrollTrigger: {
@@ -58,11 +64,12 @@ export class PortfolioTwoComponent implements AfterViewInit {
                     duration: 10,
                 },
             })
-                .to('#makhelid', { scale: 0.9 })
+                .to('#sheresta', { scale: 0.9 })
                 .to('#quaziro', { y: -470, scale: 0.95 }, '<+4')
-                .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
-                .to('#contentERP', { y: -961 }, '<-5')
+                .to('#sherestapic', { opacity: 0.2, duration: 1 }, '>-0.5')
+                .to('#lieblingsmode', { y: -961 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#contentERP', { y: -1330 }, '<-3')
         } else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
             gsap.timeline({
                 scrollTrigger: {
@@ -77,11 +84,12 @@ export class PortfolioTwoComponent implements AfterViewInit {
                     duration: 10,
                 },
             })
-                .to('#makhelid', { scale: 0.9 })
+                .to('#sheresta', { scale: 0.9 })
                 .to('#quaziro', { y: -440, scale: 0.95 }, '<+4')
-                .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
-                .to('#contentERP', { y: -876 }, '<-5')
+                .to('#sherestapic', { opacity: 0.2, duration: 1 }, '>-0.5')
+                .to('#lieblingsmode', { y: -876 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#contentERP', { y: -1200 }, '<-3')
         } else if (window.innerWidth >= 1024 && window.innerWidth < 1280) {
             gsap.timeline({
                 scrollTrigger: {
@@ -96,11 +104,12 @@ export class PortfolioTwoComponent implements AfterViewInit {
                     duration: 10,
                 },
             })
-                .to('#makhelid', { y: -140, scale: 0.85 })
+                .to('#sheresta', { y: -140, scale: 0.85 })
                 .to('#quaziro', { y: -589, scale: 0.9 }, '<+4')
-                .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
-                .to('#contentERP', { y: -1021 }, '<-5')
+                .to('#sherestapic', { opacity: 0.2, duration: 1 }, '>-0.5')
+                .to('#lieblingsmode', { y: -1021 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#contentERP', { y: -1440 }, '<-3')
         } else {
             gsap.timeline({
                 scrollTrigger: {
@@ -115,11 +124,12 @@ export class PortfolioTwoComponent implements AfterViewInit {
                     duration: 10,
                 },
             })
-                .to('#makhelid', { y: -150, scale: 0.85 })
+                .to('#sheresta', { y: -150, scale: 0.85 })
                 .to('#quaziro', { y: -596, scale: 0.9 }, '<+4')
-                .to('#makleidpic', { opacity: 0.2, duration: 1 }, '>-0.5')
-                .to('#contentERP', { y: -1024 }, '<-5')
+                .to('#sherestapic', { opacity: 0.2, duration: 1 }, '>-0.5')
+                .to('#lieblingsmode', { y: -1024, scale: 0.95 }, '<-5')
                 .to('#quizzaropic', { opacity: 0.2, duration: 1 }, '>-0.4')
+                .to('#contentERP', { y: -1330 }, '<-3')
         }
     }
 }

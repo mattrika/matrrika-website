@@ -51,23 +51,23 @@ importers:
         specifier: ^4.11.1
         version: 4.14.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
       '@omnedia/ngx-background-beams':
-        specifier: ^2.0.0
-        version: 2.0.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
+        specifier: ^4.0.1
+        version: 4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
       '@omnedia/ngx-border-beam':
-        specifier: ^2.0.0
-        version: 2.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
+        specifier: ^4.0.1
+        version: 4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
       '@omnedia/ngx-gradient-text':
-        specifier: ^2.0.0
-        version: 2.0.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
+        specifier: ^4.0.1
+        version: 4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
       '@omnedia/ngx-number-ticker':
-        specifier: ^2.0.0
-        version: 2.0.2(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
+        specifier: ^4.0.1
+        version: 4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
       '@omnedia/ngx-shine-border':
-        specifier: ^2.0.0
-        version: 2.0.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
+        specifier: ^4.0.1
+        version: 4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))
       '@omnedia/ngx-three-globe':
-        specifier: ^2.0.0
-        version: 2.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(three-globe@2.45.0(three@0.167.1))(three@0.167.1)
+        specifier: ^4.1.0
+        version: 4.1.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(three-globe@2.45.0(three@0.167.1))(three@0.167.1)
       flowbite:
         specifier: ^2.5.2
         version: 2.5.2(rollup@4.59.0)
@@ -1314,42 +1314,42 @@ packages:
     resolution: {integrity: sha512-mGUWr1uMnf0le2TwfOZY4SFxZGXGfm4Jtay/nwAa2FLNAKXUoUwaGwBMNH36UHPtinWfTSJ3nqFQr0091CxVGg==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@omnedia/ngx-background-beams@2.0.0':
-    resolution: {integrity: sha512-QTRvE+nEgejTsd76NLjeND/buAvBYkKUpANvZnfBZa+/lAKyocT7ZOVFDMBWNVT+EnqTTu2LM08/XRLQYPbu6Q==}
+  '@omnedia/ngx-background-beams@4.0.1':
+    resolution: {integrity: sha512-vOpGaXXLFqoI4RtlMgRKvCZI9eU1t1VKsELOolTyznGRlMN+9ej6n6aO3MB96g8Dwx/VcF3onXfmQ//VSdLu1Q==}
     peerDependencies:
-      '@angular/common': ^19.0.0
-      '@angular/core': ^19.0.0
+      '@angular/common': ^21.0.0
+      '@angular/core': ^21.0.0
 
-  '@omnedia/ngx-border-beam@2.0.1':
-    resolution: {integrity: sha512-3kGyNoaM+l/8VHutS5nfLHT/V19EJER3E2MT5QHRhT0ch2hjsd4NFbqxoTVhKiIqrhYDvWVDKLmK/iEMCwnnPA==}
+  '@omnedia/ngx-border-beam@4.0.1':
+    resolution: {integrity: sha512-o+9dSei2WYIG5K7MwrIJY+v2COcD6QATBZ6cQvo8r7H/GjgyqOfmFMttqMOEBBvz3IF80fBCTGv9eMQbjvJZ+Q==}
     peerDependencies:
-      '@angular/common': ^19.0.0
-      '@angular/core': ^19.0.0
+      '@angular/common': ^21.0.0
+      '@angular/core': ^21.0.0
 
-  '@omnedia/ngx-gradient-text@2.0.0':
-    resolution: {integrity: sha512-tD7FoHz+9gAfodKyUlga85UUG3FJ8QQg8knXbn1CsFXkVVZldBJQN3luZsnL8fC/GwUbotdTAL9/mEIFpky3ew==}
+  '@omnedia/ngx-gradient-text@4.0.1':
+    resolution: {integrity: sha512-2Yr4o6IdWbjHS+ojmwhTQRy1Qu1mDWK0fCA7pqVczzHe2OZdRCTIMpZqmi+ekQASy5i+Wh7XmdsczrBl5XKVMA==}
     peerDependencies:
-      '@angular/common': ^19.0.0
-      '@angular/core': ^19.0.0
+      '@angular/common': ^21.0.0
+      '@angular/core': ^21.0.0
 
-  '@omnedia/ngx-number-ticker@2.0.2':
-    resolution: {integrity: sha512-lZsXjI6Arr+IMAiZTYPpvHM9ic0oS4T/mu0P2tLfmZ6mv79eYbmrZx3uHKUHeyfBiqJxoyJgKQ2uCCl/1w+yUg==}
+  '@omnedia/ngx-number-ticker@4.0.1':
+    resolution: {integrity: sha512-NskpkiBvZBw+ih7Dr0tPpVMa7ODJH3qx5Q0HPc/LN0LC167pAfRBpHVMaCOtyVHZOeiDSnBp1UjUl0XPqAR0aA==}
     peerDependencies:
-      '@angular/common': ^19.0.0
-      '@angular/core': ^19.0.0
+      '@angular/common': ^21.0.0
+      '@angular/core': ^21.0.0
 
-  '@omnedia/ngx-shine-border@2.0.0':
-    resolution: {integrity: sha512-sXyqO1HTKutqtw1bU14ob9Uf9+5ezb0UQrTtBREAQey2HiFbfSc7pisWenO2gGNUqWQfVdNDh6eZE6SLBa0dAg==}
+  '@omnedia/ngx-shine-border@4.0.1':
+    resolution: {integrity: sha512-ilZ88GUuD4/mUEzPscfhaZqtR/ZsBhe6TeCFcTd0sq+BDmal1jRew+21rH1zt7Ecvg+WbgGKgvePCi9eMwiXNQ==}
     peerDependencies:
-      '@angular/common': ^19.0.0
-      '@angular/core': ^19.0.0
+      '@angular/common': ^21.0.0
+      '@angular/core': ^21.0.0
 
-  '@omnedia/ngx-three-globe@2.0.1':
-    resolution: {integrity: sha512-Q8tRTb96XBigclDU11dtpCD2U7bzDRnL/m2ZNVL2ueg207H6wetApDWpHeHqRgbVYR8Vci6cPlqwq+LQN6QxMg==}
+  '@omnedia/ngx-three-globe@4.1.0':
+    resolution: {integrity: sha512-zi887+Iu3B4O1QD3WW9JES7FZRryoVhOJj2rQr2u4dMA/Ip0BaQasIPsw6nvTWfM/n4s0D07JvoC1/bl0Y5sjQ==}
     peerDependencies:
-      '@angular/common': ^19.0.0
-      '@angular/core': ^19.0.0
-      three: ^0.177.0
+      '@angular/common': ^21.0.0
+      '@angular/core': ^21.0.0
+      three: ^0.182.0
       three-globe: ^2.42.11
 
   '@parcel/watcher-android-arm64@2.5.6':
@@ -5467,37 +5467,37 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@omnedia/ngx-background-beams@2.0.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
+  '@omnedia/ngx-background-beams@4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
     dependencies:
       '@angular/common': 20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
       '@angular/core': 20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1)
       tslib: 2.8.1
 
-  '@omnedia/ngx-border-beam@2.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
+  '@omnedia/ngx-border-beam@4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
     dependencies:
       '@angular/common': 20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
       '@angular/core': 20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1)
       tslib: 2.8.1
 
-  '@omnedia/ngx-gradient-text@2.0.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
+  '@omnedia/ngx-gradient-text@4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
     dependencies:
       '@angular/common': 20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
       '@angular/core': 20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1)
       tslib: 2.8.1
 
-  '@omnedia/ngx-number-ticker@2.0.2(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
+  '@omnedia/ngx-number-ticker@4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
     dependencies:
       '@angular/common': 20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
       '@angular/core': 20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1)
       tslib: 2.8.1
 
-  '@omnedia/ngx-shine-border@2.0.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
+  '@omnedia/ngx-shine-border@4.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))':
     dependencies:
       '@angular/common': 20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
       '@angular/core': 20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1)
       tslib: 2.8.1
 
-  '@omnedia/ngx-three-globe@2.0.1(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(three-globe@2.45.0(three@0.167.1))(three@0.167.1)':
+  '@omnedia/ngx-three-globe@4.1.0(@angular/common@20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(three-globe@2.45.0(three@0.167.1))(three@0.167.1)':
     dependencies:
       '@angular/common': 20.3.17(@angular/core@20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
       '@angular/core': 20.3.17(@angular/compiler@20.3.17)(rxjs@7.8.2)(zone.js@0.15.1)

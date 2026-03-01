@@ -9,7 +9,6 @@
             "@environment/*": ["src/environments/*"]
         },
         "typeRoots": ["node_modules/@types"],
-        "lib": ["ES2022", "dom"],
         "declaration": false,
         "experimentalDecorators": true,
         "esModuleInterop": true,
@@ -17,7 +16,7 @@
         "resolveJsonModule": true,
         "importHelpers": true,
         "module": "ES2022",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "noFallthroughCasesInSwitch": true,
         "noImplicitOverride": true,
         "noImplicitReturns": true,

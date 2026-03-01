@@ -44,7 +44,7 @@
             "prefix": "app",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-angular:application",
+                    "builder": "@angular/build:application",
                     "options": {
                         "outputPath": {
                           "base": "dist/mattrika-website"
@@ -97,7 +97,7 @@
                     "defaultConfiguration": "production"
                 },
                 "serve": {
-                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "builder": "@angular/build:dev-server",
                     "configurations": {
                         "production": {
                             "buildTarget": "mattrika-website:build:production"
@@ -109,13 +109,13 @@
                     "defaultConfiguration": "development"
                 },
                 "extract-i18n": {
-                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "builder": "@angular/build:extract-i18n",
                     "options": {
                         "buildTarget": "mattrika-website:build"
                     }
                 },
                 "test": {
-                    "builder": "@angular-devkit/build-angular:karma",
+                    "builder": "@angular/build:karma",
                     "options": {
                         "karmaConfig": "karma.conf.js",
                         "polyfills": [
@@ -149,22 +149,38 @@
     },
     "schematics": {
         "@schematics/angular:component": {
-            "skipTests": true
+            "skipTests": true,
+            "type": "component"
         },
         "@schematics/angular:service": {
-            "skipTests": true
+            "skipTests": true,
+            "type": "service"
         },
         "@schematics/angular:pipe": {
-            "skipTests": true
+            "skipTests": true,
+            "typeSeparator": "."
         },
         "@schematics/angular:guard": {
-            "skipTests": true
+            "skipTests": true,
+            "typeSeparator": "."
         },
         "@angular-eslint/schematics:application": {
             "setParserOptionsProject": true
         },
         "@angular-eslint/schematics:library": {
             "setParserOptionsProject": true
+        },
+        "@schematics/angular:directive": {
+          "type": "directive"
+        },
+        "@schematics/angular:interceptor": {
+          "typeSeparator": "."
+        },
+        "@schematics/angular:module": {
+          "typeSeparator": "."
+        },
+        "@schematics/angular:resolver": {
+          "typeSeparator": "."
         }
     }
 }

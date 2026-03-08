@@ -2,7 +2,5 @@
 
 </script>
 <template>
-  <UApp>
-    <NuxtPage />
-  </UApp>
+  <UButton class="bg-red-400">Button</UButton>
 </template>

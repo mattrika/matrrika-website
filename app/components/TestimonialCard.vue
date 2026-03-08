@@ -8,33 +8,44 @@ defineProps<{
 </script>
 
 <template>
-  <div class="rounded-2xl px-10 py-10 md:px-14 md:py-12 bg-white">
+  <div class="rounded-2xl px-6 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12 bg-white">
 
-    <div class="flex gap-4 items-start mb-8">
+    <!-- Quote icon + text -->
+    <div class="flex gap-3 sm:gap-4 items-start mb-6 sm:mb-8">
       <UIcon
         name="material-symbols:format-quote-rounded"
-        class="shrink-0 mt-1 rotate-180 text-5xl text-primary-400"
+        class="shrink-0 mt-1 rotate-180 text-primary-400"
+        style="font-size: clamp(28px, 4vw, 48px); width: clamp(28px, 4vw, 48px); height: clamp(28px, 4vw, 48px);"
       />
-      <p class="font-normal leading-relaxed" style="font-size: 32px; color: rgb(91,91,91);">
+      <p
+        class="font-normal leading-relaxed"
+        style="font-size: clamp(16px, 2.2vw, 32px); color: rgb(91,91,91);"
+      >
         {{ quote }}
       </p>
     </div>
 
+    <hr class="border-neutral-200 mb-5 sm:mb-6" />
 
-    <hr class="border-neutral-200 mb-6" />
-
-
-    <div class="flex items-center gap-4">
+    <!-- Author -->
+    <div class="flex items-center gap-3 sm:gap-4">
       <img
         :src="avatar"
         :alt="name"
-        class="w-16 h-16 rounded-full object-cover shrink-0"
+        class="rounded-full object-cover shrink-0"
+        style="width: clamp(44px, 6vw, 64px); height: clamp(44px, 6vw, 64px);"
       />
       <div>
-        <p class="font-semibold leading-tight" style="font-size: 36px; color: rgb(0,0,0);">
+        <p
+          class="font-semibold leading-tight"
+          style="font-size: clamp(18px, 2.5vw, 36px); color: rgb(0,0,0);"
+        >
           {{ name }}
         </p>
-        <p class="font-medium mt-1" style="font-size: 20px; color: rgb(126,126,126);">
+        <p
+          class="font-medium mt-1"
+          style="font-size: clamp(13px, 1.5vw, 20px); color: rgb(126,126,126);"
+        >
           {{ role }}
         </p>
       </div>

@@ -27,30 +27,45 @@ const testimonials = [
   <section id="testimonials" class="py-20 md:py-28">
     <div class="mx-auto max-w-7xl px-6">
 
-
       <SectionTitle label="Clients' Testimonials" class="mb-4" />
 
-
-      <p class="font-normal mb-12 max-w-2xl" style="font-size: 20px; color: rgb(152,151,151);">
+      <p
+        class="font-normal mb-12 max-w-2xl"
+        style="font-size: clamp(14px, 1.5vw, 20px); color: rgb(152,151,151);"
+      >
         Our satisfied customers share their success stories, highlighting the
         quality and reliability of our services.
       </p>
-      <UCarousel v-slot="{ item }" :items="testimonials" loop arrows :prev="{
-        variant: 'outline',
-        color: 'neutral',
-        size: 'xl',
-        class: 'rounded-full border-neutral-300 text-neutral-400 hover:text-neutral-600 -translate-x-4',
-      }" :next="{
+
+      <UCarousel
+        v-slot="{ item }"
+        :items="testimonials"
+        loop
+        arrows
+        :prev="{
           variant: 'outline',
           color: 'neutral',
-          size: 'xl',
-          class: 'rounded-full border-neutral-300 text-neutral-400 hover:text-neutral-600 translate-x-4',
-        }" :ui="{
+          size: 'md',
+          class: 'rounded-full border-neutral-300 text-neutral-400 hover:text-neutral-600',
+        }"
+        :next="{
+          variant: 'outline',
+          color: 'neutral',
+          size: 'md',
+          class: 'rounded-full border-neutral-300 text-neutral-400 hover:text-neutral-600',
+        }"
+        :ui="{
           item: 'basis-full',
-          prev: 'sm:-start-10',
-          next: 'sm:-end-10',
-        }">
-        <TestimonialCard :quote="item.quote" :name="item.name" :role="item.role" :avatar="item.avatar" />
+          prev: 'sm:-start-8',
+          next: 'sm:-end-8',
+        }"
+      >
+        <TestimonialCard
+          :quote="item.quote"
+          :name="item.name"
+          :role="item.role"
+          :avatar="item.avatar"
+        />
       </UCarousel>
 
     </div>

@@ -6,6 +6,7 @@
   <div>
     <SectionsHero />
     <SectionsLogoMarquee />
+    <SectionsProjects />
     <SectionsTestimonials />
     <SectionsContactUs />
   </div>

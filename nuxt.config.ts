@@ -5,28 +5,29 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/main.css'],
 
-
   app: {
     head: {
       title: 'Mattrika'
     }
   },
 
-
   vite: {
     //@ts-ignore
     plugins: [tailwindcss()]
   },
+
   icon: {
     mode: 'css',
     cssLayer: 'base'
   },
+
   modules: [
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/fonts'
   ],
+
   image: {
     dir: 'assets',
     format: ['webp'],
@@ -36,5 +37,9 @@ export default defineNuxtConfig({
     ipx: {
       maxAge: 60 * 60 * 24 * 365
     }
+  },
+
+  ui: {
+    colorMode: false
   }
 })

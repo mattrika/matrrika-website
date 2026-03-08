@@ -10,31 +10,24 @@ const logos = [
   { src: quizzaro, alt: 'Quizzaro' },
   { src: sheresta, alt: 'Sheresta' },
 ]
+
+
+const marqueeLogos = [...logos, ...logos, ...logos]
 </script>
 
 <template>
-  <!-- Full-bleed strip — bg-neutral-300 matches Figma's rgb(217,217,217) -->
-  <section class="bg-neutral-300 overflow-hidden">
-    <div class="relative flex items-center h-[124px]">
+  <section class="bg-[#D9D9D9] overflow-hidden">
+    <div class="relative flex items-center h-24">
 
-      <!-- Fade edges -->
-      <div class="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-neutral-300 to-transparent z-10 pointer-events-none" />
-      <div class="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-neutral-300 to-transparent z-10 pointer-events-none" />
 
-      <!-- Scrolling track -->
-      <div class="flex animate-marquee gap-16 items-center">
-        <!-- Render logos 3× for a seamless loop on all screen sizes -->
-        <template v-for="rep in 3" :key="`rep-${rep}`">
-          <template v-for="(logo, i) in logos" :key="`${rep}-${i}`">
-            <div class="flex-shrink-0 px-4">
-              <img
-                :src="logo.src"
-                :alt="logo.alt"
-                class="h-10 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-              />
-            </div>
-          </template>
-        </template>
+      <div class="marquee-fade-left" />
+      <div class="marquee-fade-right" />
+
+
+      <div class="marquee-track">
+        <div v-for="(logo, i) in marqueeLogos" :key="i" class="logo-item">
+          <img :src="logo.src" :alt="logo.alt" class="logo-img" />
+        </div>
       </div>
 
     </div>
@@ -42,17 +35,64 @@ const logos = [
 </template>
 
 <style scoped>
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-33.333%); }
-}
-
-.animate-marquee {
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
   animation: marquee 25s linear infinite;
   will-change: transform;
 }
 
-.animate-marquee:hover {
+.marquee-track:hover {
   animation-play-state: paused;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  padding: 0 1rem;
+}
+
+.logo-img {
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.logo-img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.marquee-fade-left,
+.marquee-fade-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 6rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.marquee-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #D9D9D9, transparent);
+}
+
+.marquee-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #D9D9D9, transparent);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.333%);
+  }
 }
 </style>

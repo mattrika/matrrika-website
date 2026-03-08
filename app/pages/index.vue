@@ -6,5 +6,7 @@
   <div>
     <SectionsHero />
     <SectionsLogoMarquee />
+    <SectionsTestimonials />
+    <SectionsContactUs />
   </div>
 </template>

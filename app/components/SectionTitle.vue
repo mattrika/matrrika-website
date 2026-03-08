@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <h2 class="gradient-text font-medium text-5xl leading-relaxed">{{ label }}</h2>
+  <h2 class="gradient-text font-medium leading-relaxed text-3xl md:text-4xl lg:text-5xl">{{ label }}</h2>
 </template>
 
 <style scoped>
@@ -18,8 +18,8 @@ defineProps<{
 
   &::after {
     content: '';
-    width: 100px;
-    height: 7px;
+    width: clamp(60px, 8vw, 100px);
+    height: 5px;
     position: absolute;
     top: 100%;
     left: 0;

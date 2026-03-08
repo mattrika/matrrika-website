@@ -1,0 +1,1 @@
+increse the text sizes a bit  add cursor pointer + when that primary button itsd hoverd its hoverd style is bit whiting chages its hoverd style 

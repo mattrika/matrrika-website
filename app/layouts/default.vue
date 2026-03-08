@@ -1,9 +1,9 @@
 <template>
-  <AppHeader />
+  <SectionsHeader />
 
   <UMain>
     <slot />
   </UMain>
 
-  <AppFooter />
+  <SectionsFooter />
 </template>

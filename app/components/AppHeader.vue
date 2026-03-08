@@ -11,7 +11,7 @@ const navItems = [
 
 <template>
   <UHeader to="/" :ui="{
-    root: 'border-b border-neutral-200',
+    root: 'border-b border-neutral-200 bg-custom data-[sticky=true]:bg-white',
     title: 'text-xl font-medium'
   }">
     <template #title>

@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+@theme {
+
+  --font-roboto: 'Roboto', sans-serif;
+
+}

@@ -1,6 +1,18 @@
 <script setup lang="ts">
 
 </script>
+
 <template>
-  <UButton class="bg-red-400">Button</UButton>
+  <div class="min-h-screen bg-white">
+    <Navbar />
+    <main>
+      <Hero />
+      <LogoCarousel />
+      <ServicesSection />
+      <ProjectsSection />
+      <TestimonialsSection />
+      <ContactSection />
+    </main>
+    <Footer />
+  </div>
 </template>

@@ -21,7 +21,12 @@ export default defineNuxtConfig({
     mode: 'css',
     cssLayer: 'base'
   },
-  modules: ['@nuxt/icon', '@nuxt/image', '@nuxt/ui'],
+  modules: [
+    '@nuxt/icon',
+    '@nuxt/image',
+    '@nuxt/ui',
+    '@nuxt/fonts'
+  ],
   image: {
     dir: 'assets',
     format: ['webp'],

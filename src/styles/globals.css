@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  /* Mattrika Brand Palette (Extracted from Logo) */
+  --brand-primary: #00a294; /* Vibrant Mattrika Teal */
+  --brand-primary-hover: #00877a;
+  --brand-secondary: #999999; /* Neutral Gray */
+  --brand-forest-green: #00473e; /* Deep green for high contrast text */
+  --brand-parchment: #fbf8f3;
+  --brand-text-main: #1e293b;
+  --brand-text-muted: #475569;
+
+  --background: var(--brand-parchment);
+  --foreground: var(--brand-primary);
+
+  --font-roboto: "Roboto", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-roboto);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--brand-parchment);
+    color: var(--brand-text-main);
+    font-family: var(--font-roboto);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+@layer utilities {
+  @keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes border-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .animate-border-gradient {
+    position: relative;
+    background: var(--brand-parchment);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+
+  .animate-border-gradient::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    background: conic-gradient(
+      from 0deg,
+      var(--brand-primary),
+      #00d1c1,
+      var(--brand-forest-green),
+      #00d1c1,
+      var(--brand-primary)
+    );
+    border-radius: inherit;
+    animation: border-rotate 4s linear infinite;
+  }
+  .button-outline{
+    @apply inline-flex items-center gap-2 px-8 py-4.5 border border-(--brand-primary) bg-white text-(--brand-primary) text-[11px] font-mono font-bold tracking-[0.2em] uppercase transition-all hover:text-white hover:bg-(--brand-primary)   cursor-pointer rounded-full;
+  }
+  .button-filled{
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-(--brand-primary) px-8 py-4 text-sm font-semibold text-white transition-all hover:scale-[1.02] hover:bg-(--brand-primary)/90 active:scale-[0.98] cursor-pointer;
+  }
+  .main-container {
+    @apply max-w-[min(1400px,92vw)] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
